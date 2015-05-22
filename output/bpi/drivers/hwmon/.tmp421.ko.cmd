@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/tmp421.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/tmp421.ko drivers/hwmon/tmp421.o drivers/hwmon/tmp421.mod.o

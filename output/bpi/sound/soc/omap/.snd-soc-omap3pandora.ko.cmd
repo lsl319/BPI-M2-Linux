@@ -1,0 +1,1 @@
+cmd_sound/soc/omap/snd-soc-omap3pandora.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/omap/snd-soc-omap3pandora.ko sound/soc/omap/snd-soc-omap3pandora.o sound/soc/omap/snd-soc-omap3pandora.mod.o

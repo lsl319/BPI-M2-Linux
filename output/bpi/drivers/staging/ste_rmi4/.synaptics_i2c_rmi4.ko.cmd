@@ -1,0 +1,1 @@
+cmd_drivers/staging/ste_rmi4/synaptics_i2c_rmi4.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/ste_rmi4/synaptics_i2c_rmi4.ko drivers/staging/ste_rmi4/synaptics_i2c_rmi4.o drivers/staging/ste_rmi4/synaptics_i2c_rmi4.mod.o

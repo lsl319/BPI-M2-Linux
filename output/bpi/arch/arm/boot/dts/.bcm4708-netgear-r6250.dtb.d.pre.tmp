@@ -1,0 +1,9 @@
+bcm4708-netgear-r6250.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm4708-netgear-r6250.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm4708.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/input/input.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/af9013.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/af9013.ko drivers/media/dvb-frontends/af9013.o drivers/media/dvb-frontends/af9013.mod.o

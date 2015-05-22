@@ -1,0 +1,4 @@
+kernel/drivers/input/misc/mpu3050.ko
+kernel/drivers/input/misc/axp20x-pek.ko
+kernel/drivers/input/misc/uinput.ko
+kernel/drivers/input/misc/xen-kbdfront.ko

@@ -1,0 +1,5 @@
+hi3620-hi4511.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/hi3620-hi4511.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/hi3620.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/hi3620-clock.h

@@ -1,0 +1,11 @@
+omap3-zoom3.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-zoom3.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap36xx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap-zoom-common.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap-gpmc-smsc911x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/twl4030.dtsi

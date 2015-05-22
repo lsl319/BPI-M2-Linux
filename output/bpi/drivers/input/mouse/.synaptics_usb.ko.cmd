@@ -1,0 +1,1 @@
+cmd_drivers/input/mouse/synaptics_usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/mouse/synaptics_usb.ko drivers/input/mouse/synaptics_usb.o drivers/input/mouse/synaptics_usb.mod.o

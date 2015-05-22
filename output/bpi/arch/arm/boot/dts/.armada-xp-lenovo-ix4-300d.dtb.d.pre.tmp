@@ -1,0 +1,7 @@
+armada-xp-lenovo-ix4-300d.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp-lenovo-ix4-300d.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/input/input.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp-mv78230.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-xp.dtsi

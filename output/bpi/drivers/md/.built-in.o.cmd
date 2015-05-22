@@ -1,0 +1,1 @@
+cmd_drivers/md/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/md/built-in.o drivers/md/dm-mod.o drivers/md/dm-builtin.o drivers/md/dm-bufio.o drivers/md/dm-crypt.o drivers/md/dm-snapshot.o drivers/md/dm-mirror.o drivers/md/dm-log.o drivers/md/dm-region-hash.o drivers/md/dm-zero.o 

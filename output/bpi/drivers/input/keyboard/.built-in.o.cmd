@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/input/keyboard/built-in.o drivers/input/keyboard/atkbd.o drivers/input/keyboard/cros_ec_keyb.o drivers/input/keyboard/gpio_keys.o drivers/input/keyboard/samsung-keypad.o drivers/input/keyboard/spear-keyboard.o drivers/input/keyboard/st-keyscan.o drivers/input/keyboard/tegra-kbc.o 

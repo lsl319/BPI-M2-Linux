@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/f75375s.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/f75375s.ko drivers/hwmon/f75375s.o drivers/hwmon/f75375s.mod.o

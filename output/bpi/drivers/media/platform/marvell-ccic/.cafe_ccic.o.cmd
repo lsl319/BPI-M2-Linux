@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/marvell-ccic/cafe_ccic.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/media/platform/marvell-ccic/cafe_ccic.o drivers/media/platform/marvell-ccic/cafe-driver.o drivers/media/platform/marvell-ccic/mcam-core.o 

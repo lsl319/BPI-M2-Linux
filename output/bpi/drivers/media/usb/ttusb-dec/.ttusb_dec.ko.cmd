@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/ttusb-dec/ttusb_dec.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/usb/ttusb-dec/ttusb_dec.ko drivers/media/usb/ttusb-dec/ttusb_dec.o drivers/media/usb/ttusb-dec/ttusb_dec.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/w1/masters/matrox_w1.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/w1/masters/matrox_w1.ko drivers/w1/masters/matrox_w1.o drivers/w1/masters/matrox_w1.mod.o

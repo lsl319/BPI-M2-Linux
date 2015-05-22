@@ -1,0 +1,13 @@
+kernel/drivers/net/ethernet/allwinner/sun4i-emac.ko
+kernel/drivers/net/ethernet/calxeda/xgmac.ko
+kernel/drivers/net/ethernet/freescale/fec.ko
+kernel/drivers/net/ethernet/hisilicon/hix5hd2_gmac.ko
+kernel/drivers/net/ethernet/realtek/r8169.ko
+kernel/drivers/net/ethernet/stmicro/stmmac/stmmac.ko
+kernel/drivers/net/ethernet/stmicro/stmmac/stmmac-platform.ko
+kernel/drivers/net/ethernet/ti/cpsw-common.ko
+kernel/drivers/net/ethernet/ti/davinci_mdio.ko
+kernel/drivers/net/ethernet/ti/davinci_cpdma.ko
+kernel/drivers/net/ethernet/ti/cpsw_ale.ko
+kernel/drivers/net/ethernet/ti/ti_cpsw.ko
+kernel/drivers/net/ethernet/xilinx/xilinx_emaclite.ko

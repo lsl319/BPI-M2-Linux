@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/omap2/dss/omapdss.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/video/fbdev/omap2/dss/omapdss.ko drivers/video/fbdev/omap2/dss/omapdss.o drivers/video/fbdev/omap2/dss/omapdss.mod.o

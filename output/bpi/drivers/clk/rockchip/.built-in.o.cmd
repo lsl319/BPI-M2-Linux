@@ -1,0 +1,1 @@
+cmd_drivers/clk/rockchip/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/rockchip/built-in.o drivers/clk/rockchip/clk-rockchip.o drivers/clk/rockchip/clk.o drivers/clk/rockchip/clk-pll.o drivers/clk/rockchip/clk-cpu.o drivers/clk/rockchip/clk-mmc-phase.o drivers/clk/rockchip/softrst.o drivers/clk/rockchip/clk-rk3188.o drivers/clk/rockchip/clk-rk3288.o 

@@ -1,0 +1,1 @@
+cmd_drivers/input/joystick/magellan.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/joystick/magellan.ko drivers/input/joystick/magellan.o drivers/input/joystick/magellan.mod.o

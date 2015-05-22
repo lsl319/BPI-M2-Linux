@@ -1,0 +1,9 @@
+bcm28155-ap.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm28155-ap.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm11351.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/bcm281xx.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm59056.dtsi

@@ -1,0 +1,1 @@
+cmd_drivers/power/bq24735-charger.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/bq24735-charger.ko drivers/power/bq24735-charger.o drivers/power/bq24735-charger.mod.o

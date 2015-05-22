@@ -1,0 +1,2 @@
+zynq-parallella.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/zynq-parallella.dts

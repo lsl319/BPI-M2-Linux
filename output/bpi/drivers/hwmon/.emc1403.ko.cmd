@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/emc1403.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/emc1403.ko drivers/hwmon/emc1403.o drivers/hwmon/emc1403.mod.o

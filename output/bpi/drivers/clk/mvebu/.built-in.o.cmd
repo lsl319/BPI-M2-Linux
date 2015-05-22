@@ -1,0 +1,1 @@
+cmd_drivers/clk/mvebu/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/mvebu/built-in.o drivers/clk/mvebu/common.o drivers/clk/mvebu/clk-cpu.o drivers/clk/mvebu/clk-corediv.o drivers/clk/mvebu/armada-370.o drivers/clk/mvebu/armada-375.o drivers/clk/mvebu/armada-38x.o drivers/clk/mvebu/armada-xp.o drivers/clk/mvebu/dove.o 

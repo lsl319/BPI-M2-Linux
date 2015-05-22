@@ -1,0 +1,1 @@
+cmd_drivers/scsi/ufs/ufshcd.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/scsi/ufs/ufshcd.ko drivers/scsi/ufs/ufshcd.o drivers/scsi/ufs/ufshcd.mod.o

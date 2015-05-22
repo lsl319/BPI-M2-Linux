@@ -1,0 +1,2 @@
+spear1340-evb.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/spear1340-evb.dts

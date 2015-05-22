@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/go7007/go7007-usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/usb/go7007/go7007-usb.ko drivers/media/usb/go7007/go7007-usb.o drivers/media/usb/go7007/go7007-usb.mod.o

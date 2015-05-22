@@ -1,0 +1,1 @@
+cmd_drivers/devfreq/governor_performance.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/devfreq/governor_performance.ko drivers/devfreq/governor_performance.o drivers/devfreq/governor_performance.mod.o

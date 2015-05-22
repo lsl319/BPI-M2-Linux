@@ -1,0 +1,2 @@
+export KBUILD_OUTPUT=output/bpi
+mkdir -p $KBUILD_OUTPUT

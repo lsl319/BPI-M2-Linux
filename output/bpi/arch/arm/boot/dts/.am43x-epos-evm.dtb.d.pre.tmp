@@ -1,0 +1,9 @@
+am43x-epos-evm.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am43x-epos-evm.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am4372.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/am43xx.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pwm/pwm.h

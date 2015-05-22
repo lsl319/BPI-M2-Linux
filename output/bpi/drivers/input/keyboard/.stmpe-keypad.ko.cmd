@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/stmpe-keypad.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/stmpe-keypad.ko drivers/input/keyboard/stmpe-keypad.o drivers/input/keyboard/stmpe-keypad.mod.o

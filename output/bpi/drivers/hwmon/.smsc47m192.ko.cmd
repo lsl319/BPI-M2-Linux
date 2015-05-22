@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/smsc47m192.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/smsc47m192.ko drivers/hwmon/smsc47m192.o drivers/hwmon/smsc47m192.mod.o

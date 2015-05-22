@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/metro-usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/usb/serial/metro-usb.ko drivers/usb/serial/metro-usb.o drivers/usb/serial/metro-usb.mod.o

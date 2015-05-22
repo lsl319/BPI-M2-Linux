@@ -1,0 +1,7 @@
+ste-ccu9540.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/ste-ccu9540.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/ste-dbx5x0.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/mfd/dbx500-prcmu.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/arm/ux500_pm_domains.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

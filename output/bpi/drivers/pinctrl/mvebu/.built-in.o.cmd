@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/mvebu/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/pinctrl/mvebu/built-in.o drivers/pinctrl/mvebu/pinctrl-mvebu.o drivers/pinctrl/mvebu/pinctrl-dove.o drivers/pinctrl/mvebu/pinctrl-armada-370.o drivers/pinctrl/mvebu/pinctrl-armada-375.o drivers/pinctrl/mvebu/pinctrl-armada-38x.o drivers/pinctrl/mvebu/pinctrl-armada-xp.o 

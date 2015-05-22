@@ -1,0 +1,1 @@
+cmd_drivers/clk/st/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/st/built-in.o drivers/clk/st/clkgen-mux.o drivers/clk/st/clkgen-pll.o drivers/clk/st/clkgen-fsyn.o drivers/clk/st/clk-flexgen.o 

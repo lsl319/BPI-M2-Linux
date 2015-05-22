@@ -1,0 +1,2 @@
+vexpress-v2p-ca15_a7.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/vexpress-v2p-ca15_a7.dts

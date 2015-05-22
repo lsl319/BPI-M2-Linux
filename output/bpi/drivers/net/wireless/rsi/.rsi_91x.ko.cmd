@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rsi/rsi_91x.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/rsi/rsi_91x.ko drivers/net/wireless/rsi/rsi_91x.o drivers/net/wireless/rsi/rsi_91x.mod.o

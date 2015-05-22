@@ -1,0 +1,1 @@
+arch/arm/boot/dts/am437x-gp-evm.dtb: arch/arm/boot/dts/.am437x-gp-evm.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am43xx-clocks.dtsi

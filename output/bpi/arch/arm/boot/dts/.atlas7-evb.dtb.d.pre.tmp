@@ -1,0 +1,2 @@
+atlas7-evb.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/atlas7-evb.dts

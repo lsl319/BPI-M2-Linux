@@ -1,0 +1,5 @@
+exynos5410-smdk5410.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5410-smdk5410.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5410.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos5410.h

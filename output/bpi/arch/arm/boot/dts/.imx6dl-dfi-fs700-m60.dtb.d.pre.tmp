@@ -1,0 +1,10 @@
+imx6dl-dfi-fs700-m60.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6dl-dfi-fs700-m60.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6dl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6dl-pinfunc.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/imx6qdl-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl-dfi-fs700-m60.dtsi

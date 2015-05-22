@@ -1,0 +1,12 @@
+stih407-b2120.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih407-b2120.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stihxxx-b2120.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih407.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih407-clock.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/stih407-clks.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih407-family.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih407-pinctrl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/st-pincfg.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/reset-controller/stih407-resets.h

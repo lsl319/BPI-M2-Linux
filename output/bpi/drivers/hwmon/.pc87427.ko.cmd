@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/pc87427.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/pc87427.ko drivers/hwmon/pc87427.o drivers/hwmon/pc87427.mod.o

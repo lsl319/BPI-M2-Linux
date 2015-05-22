@@ -1,0 +1,1 @@
+cmd_drivers/input/joystick/walkera0701.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/joystick/walkera0701.ko drivers/input/joystick/walkera0701.o drivers/input/joystick/walkera0701.mod.o

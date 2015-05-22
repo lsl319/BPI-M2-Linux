@@ -1,0 +1,1 @@
+cmd_drivers/clk/socfpga/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/socfpga/built-in.o drivers/clk/socfpga/clk.o drivers/clk/socfpga/clk-gate.o drivers/clk/socfpga/clk-pll.o drivers/clk/socfpga/clk-periph.o 

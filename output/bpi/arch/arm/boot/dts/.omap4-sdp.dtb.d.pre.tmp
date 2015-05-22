@@ -1,0 +1,13 @@
+omap4-sdp.o: /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap4-sdp.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap443x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap4.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap4-cpu-thermal.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/elpida_ecb240abacn.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/twl6030.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/twl6030_omap4.dtsi

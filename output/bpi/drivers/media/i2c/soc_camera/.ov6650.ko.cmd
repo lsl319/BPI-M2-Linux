@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/soc_camera/ov6650.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/i2c/soc_camera/ov6650.ko drivers/media/i2c/soc_camera/ov6650.o drivers/media/i2c/soc_camera/ov6650.mod.o

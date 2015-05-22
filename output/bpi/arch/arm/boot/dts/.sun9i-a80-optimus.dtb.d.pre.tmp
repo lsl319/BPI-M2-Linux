@@ -1,0 +1,9 @@
+sun9i-a80-optimus.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/sun9i-a80-optimus.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/sun9i-a80.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton64.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/sun4i-a10.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/sunxi-common-regulators.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h

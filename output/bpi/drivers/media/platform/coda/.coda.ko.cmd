@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/coda/coda.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/platform/coda/coda.ko drivers/media/platform/coda/coda.o drivers/media/platform/coda/coda.mod.o

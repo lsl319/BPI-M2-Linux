@@ -1,0 +1,180 @@
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm911360_entphn.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm911360_entphn.dts"
+# 33 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm911360_entphn.dts"
+/dts-v1/;
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm-cygnus.dtsi" 1
+# 33 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm-cygnus.dtsi"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h" 1
+
+
+
+
+
+
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h" 1
+# 9 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h" 2
+# 34 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm-cygnus.dtsi" 2
+
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi" 1
+
+
+
+
+
+
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+ memory { device_type = "memory"; reg = <0 0>; };
+};
+# 37 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm-cygnus.dtsi" 2
+
+/ {
+ compatible = "brcm,cygnus";
+ model = "Broadcom Cygnus SoC";
+ interrupt-parent = <&gic>;
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  cpu@0 {
+   device_type = "cpu";
+   compatible = "arm,cortex-a9";
+   next-level-cache = <&L2>;
+   reg = <0x0>;
+  };
+ };
+
+ /include/ "bcm-cygnus-clock.dtsi"
+
+ amba {
+  #address-cells = <1>;
+  #size-cells = <1>;
+  compatible = "arm,amba-bus", "simple-bus";
+  interrupt-parent = <&gic>;
+  ranges;
+
+  wdt@18009000 {
+    compatible = "arm,sp805" , "arm,primecell";
+    reg = <0x18009000 0x1000>;
+    interrupts = <0 91 4>;
+    clocks = <&axi81_clk>;
+    clock-names = "apb_pclk";
+  };
+ };
+
+ i2c0: i2c@18008000 {
+  compatible = "brcm,cygnus-iproc-i2c", "brcm,iproc-i2c";
+  reg = <0x18008000 0x100>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  interrupts = <0 85 0>;
+  clock-frequency = <100000>;
+  status = "disabled";
+ };
+
+ i2c1: i2c@1800b000 {
+  compatible = "brcm,cygnus-iproc-i2c", "brcm,iproc-i2c";
+  reg = <0x1800b000 0x100>;
+  #address-cells = <1>;
+  #size-cells = <0>;
+  interrupts = <0 86 0>;
+  clock-frequency = <100000>;
+  status = "disabled";
+ };
+
+ uart0: serial@18020000 {
+  compatible = "snps,dw-apb-uart";
+  reg = <0x18020000 0x100>;
+  reg-shift = <2>;
+  reg-io-width = <4>;
+  interrupts = <0 73 4>;
+  clocks = <&axi81_clk>;
+  clock-frequency = <100000000>;
+  status = "disabled";
+ };
+
+ uart1: serial@18021000 {
+  compatible = "snps,dw-apb-uart";
+  reg = <0x18021000 0x100>;
+  reg-shift = <2>;
+  reg-io-width = <4>;
+  interrupts = <0 74 4>;
+  clocks = <&axi81_clk>;
+  clock-frequency = <100000000>;
+  status = "disabled";
+ };
+
+ uart2: serial@18022000 {
+  compatible = "snps,dw-apb-uart";
+  reg = <0x18020000 0x100>;
+  reg-shift = <2>;
+  reg-io-width = <4>;
+  interrupts = <0 75 4>;
+  clocks = <&axi81_clk>;
+  clock-frequency = <100000000>;
+  status = "disabled";
+ };
+
+ uart3: serial@18023000 {
+  compatible = "snps,dw-apb-uart";
+  reg = <0x18023000 0x100>;
+  reg-shift = <2>;
+  reg-io-width = <4>;
+  interrupts = <0 76 4>;
+  clocks = <&axi81_clk>;
+  clock-frequency = <100000000>;
+  status = "disabled";
+ };
+
+ gic: interrupt-controller@19021000 {
+  compatible = "arm,cortex-a9-gic";
+  #interrupt-cells = <3>;
+  #address-cells = <0>;
+  interrupt-controller;
+  reg = <0x19021000 0x1000>,
+        <0x19020100 0x100>;
+ };
+
+ L2: l2-cache {
+  compatible = "arm,pl310-cache";
+  reg = <0x19022000 0x1000>;
+  cache-unified;
+  cache-level = <2>;
+ };
+
+ timer@19020200 {
+  compatible = "arm,cortex-a9-global-timer";
+  reg = <0x19020200 0x100>;
+  interrupts = <1 11 4>;
+  clocks = <&periph_clk>;
+ };
+
+};
+# 36 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm911360_entphn.dts" 2
+
+/ {
+ model = "Cygnus Enterprise Phone (BCM911360_ENTPHN)";
+ compatible = "brcm,bcm11360", "brcm,cygnus";
+
+ aliases {
+  serial0 = &uart3;
+ };
+
+ chosen {
+  stdout-path = &uart3;
+  bootargs = "console=ttyS0,115200";
+ };
+
+ uart3: serial@18023000 {
+  status = "okay";
+ };
+};

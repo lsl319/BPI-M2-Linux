@@ -1,0 +1,7 @@
+berlin2-sony-nsz-gs7.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/berlin2-sony-nsz-gs7.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/berlin2.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/berlin2.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h

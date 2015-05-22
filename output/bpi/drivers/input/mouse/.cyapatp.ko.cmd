@@ -1,0 +1,1 @@
+cmd_drivers/input/mouse/cyapatp.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/mouse/cyapatp.ko drivers/input/mouse/cyapatp.o drivers/input/mouse/cyapatp.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/staging/comedi/comedi.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/comedi/comedi.ko drivers/staging/comedi/comedi.o drivers/staging/comedi/comedi.mod.o

@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-spdif-rx.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/codecs/snd-soc-spdif-rx.ko sound/soc/codecs/snd-soc-spdif-rx.o sound/soc/codecs/snd-soc-spdif-rx.mod.o

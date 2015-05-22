@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/brcm80211/brcmutil/brcmutil.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/brcm80211/brcmutil/brcmutil.ko drivers/net/wireless/brcm80211/brcmutil/brcmutil.o drivers/net/wireless/brcm80211/brcmutil/brcmutil.mod.o

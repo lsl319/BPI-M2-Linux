@@ -1,0 +1,2 @@
+zynq-zc702.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/zynq-zc702.dts

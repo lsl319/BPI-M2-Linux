@@ -1,0 +1,6 @@
+exynos5260-xyref5260.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5260-xyref5260.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5260.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos5260-clk.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5260-pinctrl.dtsi

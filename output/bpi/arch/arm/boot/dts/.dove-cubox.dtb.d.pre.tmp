@@ -1,0 +1,3 @@
+dove-cubox.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove-cubox.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove.dtsi

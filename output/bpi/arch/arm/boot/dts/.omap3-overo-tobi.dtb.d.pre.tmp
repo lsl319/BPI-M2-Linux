@@ -1,0 +1,16 @@
+omap3-overo-tobi.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo-tobi.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap34xx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo-base.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/twl4030.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/twl4030_omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo-tobi-common.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo-common-peripherals.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-overo-common-dvi.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap-gpmc-smsc9221.dtsi

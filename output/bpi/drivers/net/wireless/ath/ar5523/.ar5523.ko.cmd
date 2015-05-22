@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/ath/ar5523/ar5523.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/ath/ar5523/ar5523.ko drivers/net/wireless/ath/ar5523/ar5523.o drivers/net/wireless/ath/ar5523/ar5523.mod.o

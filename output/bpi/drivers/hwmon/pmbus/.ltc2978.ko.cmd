@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/pmbus/ltc2978.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/pmbus/ltc2978.ko drivers/hwmon/pmbus/ltc2978.o drivers/hwmon/pmbus/ltc2978.mod.o

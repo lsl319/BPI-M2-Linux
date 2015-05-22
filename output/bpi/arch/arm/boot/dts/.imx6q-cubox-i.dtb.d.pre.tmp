@@ -1,0 +1,12 @@
+imx6q-cubox-i.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-cubox-i.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-pinfunc.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/imx6qdl-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl-cubox-i.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl-microsom.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl-microsom-ar8035.dtsi

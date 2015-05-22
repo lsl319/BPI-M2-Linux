@@ -1,0 +1,1 @@
+cmd_sound/soc/samsung/snd-soc-snow.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/samsung/snd-soc-snow.ko sound/soc/samsung/snd-soc-snow.o sound/soc/samsung/snd-soc-snow.mod.o

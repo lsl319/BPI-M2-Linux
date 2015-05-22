@@ -1,0 +1,6 @@
+socfpga_arria10_socdk.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/socfpga_arria10_socdk.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/socfpga_arria10.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h

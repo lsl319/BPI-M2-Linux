@@ -1,0 +1,1 @@
+cmd_drivers/mfd/wm8994-core.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/mfd/wm8994-core.ko drivers/mfd/wm8994-core.o drivers/mfd/wm8994-core.mod.o

@@ -1,0 +1,12 @@
+omap5-uevm.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap5-uevm.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap5.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap4-cpu-thermal.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap5-gpu-thermal.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap5-core-thermal.dtsi

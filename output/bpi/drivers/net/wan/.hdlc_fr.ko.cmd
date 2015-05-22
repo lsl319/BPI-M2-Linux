@@ -1,0 +1,1 @@
+cmd_drivers/net/wan/hdlc_fr.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wan/hdlc_fr.ko drivers/net/wan/hdlc_fr.o drivers/net/wan/hdlc_fr.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/sun4i-lradc-keys.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/sun4i-lradc-keys.ko drivers/input/keyboard/sun4i-lradc-keys.o drivers/input/keyboard/sun4i-lradc-keys.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/berlin/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/pinctrl/berlin/built-in.o drivers/pinctrl/berlin/berlin.o drivers/pinctrl/berlin/berlin-bg2.o drivers/pinctrl/berlin/berlin-bg2cd.o drivers/pinctrl/berlin/berlin-bg2q.o 

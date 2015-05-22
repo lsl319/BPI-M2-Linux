@@ -1,0 +1,1 @@
+cmd_arch/arm/xen/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/xen/built-in.o arch/arm/xen/enlighten.o arch/arm/xen/hypercall.o arch/arm/xen/grant-table.o arch/arm/xen/p2m.o arch/arm/xen/mm.o 

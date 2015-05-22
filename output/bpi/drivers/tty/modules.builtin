@@ -1,0 +1,15 @@
+kernel/drivers/tty/serial/serial_core.ko
+kernel/drivers/tty/serial/amba-pl011.ko
+kernel/drivers/tty/serial/samsung.ko
+kernel/drivers/tty/serial/imx.ko
+kernel/drivers/tty/serial/meson_uart.ko
+kernel/drivers/tty/serial/of_serial.ko
+kernel/drivers/tty/serial/omap-serial.ko
+kernel/drivers/tty/serial/st-asc.ko
+kernel/drivers/tty/serial/xilinx_uartps.ko
+kernel/drivers/tty/serial/sirfsoc_uart.ko
+kernel/drivers/tty/serial/serial-tegra.ko
+kernel/drivers/tty/serial/fsl_lpuart.ko
+kernel/drivers/tty/serial/8250/8250.ko
+kernel/drivers/tty/serial/8250/8250_pci.ko
+kernel/drivers/tty/serial/8250/8250_dw.ko

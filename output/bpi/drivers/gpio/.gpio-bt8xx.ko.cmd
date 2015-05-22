@@ -1,0 +1,1 @@
+cmd_drivers/gpio/gpio-bt8xx.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/gpio/gpio-bt8xx.ko drivers/gpio/gpio-bt8xx.o drivers/gpio/gpio-bt8xx.mod.o

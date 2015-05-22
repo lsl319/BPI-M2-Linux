@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/ltc4261.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/ltc4261.ko drivers/hwmon/ltc4261.o drivers/hwmon/ltc4261.mod.o

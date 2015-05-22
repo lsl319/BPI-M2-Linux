@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/cpufreq_conservative.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/cpufreq/cpufreq_conservative.ko drivers/cpufreq/cpufreq_conservative.o drivers/cpufreq/cpufreq_conservative.mod.o

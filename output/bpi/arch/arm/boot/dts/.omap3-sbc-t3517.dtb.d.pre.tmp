@@ -1,0 +1,11 @@
+omap3-sbc-t3517.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-sbc-t3517.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-cm-t3517.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am3517.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-cm-t3x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3-sb-t35.dtsi

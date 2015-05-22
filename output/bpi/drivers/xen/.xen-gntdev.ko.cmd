@@ -1,0 +1,1 @@
+cmd_drivers/xen/xen-gntdev.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/xen/xen-gntdev.ko drivers/xen/xen-gntdev.o drivers/xen/xen-gntdev.mod.o

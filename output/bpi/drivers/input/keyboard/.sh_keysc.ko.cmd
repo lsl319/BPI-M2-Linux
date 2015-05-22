@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/sh_keysc.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/sh_keysc.ko drivers/input/keyboard/sh_keysc.o drivers/input/keyboard/sh_keysc.mod.o

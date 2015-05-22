@@ -1,0 +1,1 @@
+cmd_drivers/thermal/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/thermal/built-in.o drivers/thermal/thermal_sys.o drivers/thermal/samsung/built-in.o drivers/thermal/db8500_thermal.o drivers/thermal/armada_thermal.o drivers/thermal/st/built-in.o 

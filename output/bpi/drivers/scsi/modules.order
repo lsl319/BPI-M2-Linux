@@ -1,0 +1,13 @@
+kernel/drivers/scsi/device_handler/scsi_dh.ko
+kernel/drivers/scsi/device_handler/scsi_dh_rdac.ko
+kernel/drivers/scsi/device_handler/scsi_dh_hp_sw.ko
+kernel/drivers/scsi/device_handler/scsi_dh_emc.ko
+kernel/drivers/scsi/device_handler/scsi_dh_alua.ko
+kernel/drivers/scsi/ufs/ufshcd.ko
+kernel/drivers/scsi/virtio_scsi.ko
+kernel/drivers/scsi/xen-scsifront.ko
+kernel/drivers/scsi/st.ko
+kernel/drivers/scsi/osst.ko
+kernel/drivers/scsi/ch.ko
+kernel/drivers/scsi/osd/libosd.ko
+kernel/drivers/scsi/osd/osd.ko

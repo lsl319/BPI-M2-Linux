@@ -1,0 +1,1 @@
+cmd_drivers/power/pda_power.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/pda_power.ko drivers/power/pda_power.o drivers/power/pda_power.mod.o

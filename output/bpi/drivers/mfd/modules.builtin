@@ -1,0 +1,5 @@
+kernel/drivers/mfd/bcm590xx.ko
+kernel/drivers/mfd/cros_ec.ko
+kernel/drivers/mfd/cros_ec_spi.ko
+kernel/drivers/mfd/mfd-core.ko
+kernel/drivers/mfd/max8907.ko

@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/ltc2945.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/ltc2945.ko drivers/hwmon/ltc2945.o drivers/hwmon/ltc2945.mod.o

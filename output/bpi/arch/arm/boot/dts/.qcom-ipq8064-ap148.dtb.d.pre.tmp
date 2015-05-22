@@ -1,0 +1,7 @@
+qcom-ipq8064-ap148.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/qcom-ipq8064-ap148.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/qcom-ipq8064-v1.0.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/qcom-ipq8064.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/qcom,gcc-ipq806x.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/soc/qcom,gsbi.h

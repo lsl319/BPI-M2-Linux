@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/soc_camera/mt9t031.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/i2c/soc_camera/mt9t031.ko drivers/media/i2c/soc_camera/mt9t031.o drivers/media/i2c/soc_camera/mt9t031.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/gpio/gpio-max732x.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/gpio/gpio-max732x.ko drivers/gpio/gpio-max732x.o drivers/gpio/gpio-max732x.mod.o

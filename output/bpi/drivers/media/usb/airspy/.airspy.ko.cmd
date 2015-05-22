@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/airspy/airspy.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/usb/airspy/airspy.ko drivers/media/usb/airspy/airspy.o drivers/media/usb/airspy/airspy.mod.o

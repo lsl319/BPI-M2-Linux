@@ -1,0 +1,1 @@
+cmd_arch/arm/plat-samsung/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/plat-samsung/built-in.o arch/arm/plat-samsung/init.o arch/arm/plat-samsung/cpu.o arch/arm/plat-samsung/s5p-dev-mfc.o arch/arm/plat-samsung/pm-common.o 

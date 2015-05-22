@@ -1,0 +1,4 @@
+armada-370-db.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-db.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-xp.dtsi

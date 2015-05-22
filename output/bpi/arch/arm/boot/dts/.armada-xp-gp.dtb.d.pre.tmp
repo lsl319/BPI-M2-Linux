@@ -1,0 +1,6 @@
+armada-xp-gp.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp-gp.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp-mv78460.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-xp.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-xp.dtsi

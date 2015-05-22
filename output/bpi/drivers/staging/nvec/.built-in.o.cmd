@@ -1,0 +1,1 @@
+cmd_drivers/staging/nvec/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/staging/nvec/built-in.o drivers/staging/nvec/nvec_ps2.o drivers/staging/nvec/nvec.o drivers/staging/nvec/nvec_power.o drivers/staging/nvec/nvec_kbd.o drivers/staging/nvec/nvec_paz00.o 

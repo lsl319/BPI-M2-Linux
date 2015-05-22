@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rsi/rsi_sdio.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/rsi/rsi_sdio.ko drivers/net/wireless/rsi/rsi_sdio.o drivers/net/wireless/rsi/rsi_sdio.mod.o

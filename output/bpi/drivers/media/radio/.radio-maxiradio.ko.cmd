@@ -1,0 +1,1 @@
+cmd_drivers/media/radio/radio-maxiradio.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/radio/radio-maxiradio.ko drivers/media/radio/radio-maxiradio.o drivers/media/radio/radio-maxiradio.mod.o

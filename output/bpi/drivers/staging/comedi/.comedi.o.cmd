@@ -1,0 +1,1 @@
+cmd_drivers/staging/comedi/comedi.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/staging/comedi/comedi.o drivers/staging/comedi/comedi_fops.o drivers/staging/comedi/range.o drivers/staging/comedi/drivers.o drivers/staging/comedi/comedi_buf.o drivers/staging/comedi/proc.o 

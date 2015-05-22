@@ -1,0 +1,6 @@
+socfpga_arria5_socdk.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/socfpga_arria5_socdk.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/socfpga_arria5.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/socfpga.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/reset/altr,rst-mgr.h

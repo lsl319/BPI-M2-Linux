@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/ti/wl12xx/wl12xx.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/ti/wl12xx/wl12xx.ko drivers/net/wireless/ti/wl12xx/wl12xx.o drivers/net/wireless/ti/wl12xx/wl12xx.mod.o

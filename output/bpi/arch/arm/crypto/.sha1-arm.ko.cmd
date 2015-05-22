@@ -1,0 +1,1 @@
+cmd_arch/arm/crypto/sha1-arm.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o arch/arm/crypto/sha1-arm.ko arch/arm/crypto/sha1-arm.o arch/arm/crypto/sha1-arm.mod.o

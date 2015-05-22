@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/cw1200/cw1200_core.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/cw1200/cw1200_core.ko drivers/net/wireless/cw1200/cw1200_core.o drivers/net/wireless/cw1200/cw1200_core.mod.o

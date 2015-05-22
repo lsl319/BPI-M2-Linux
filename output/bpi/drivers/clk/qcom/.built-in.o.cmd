@@ -1,0 +1,1 @@
+cmd_drivers/clk/qcom/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/qcom/built-in.o drivers/clk/qcom/clk-qcom.o drivers/clk/qcom/gcc-apq8084.o drivers/clk/qcom/mmcc-apq8084.o drivers/clk/qcom/gcc-msm8660.o drivers/clk/qcom/gcc-msm8960.o drivers/clk/qcom/gcc-msm8974.o drivers/clk/qcom/mmcc-msm8960.o drivers/clk/qcom/mmcc-msm8974.o 

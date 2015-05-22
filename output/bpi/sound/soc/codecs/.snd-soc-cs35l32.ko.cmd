@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-cs35l32.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/codecs/snd-soc-cs35l32.ko sound/soc/codecs/snd-soc-cs35l32.o sound/soc/codecs/snd-soc-cs35l32.mod.o

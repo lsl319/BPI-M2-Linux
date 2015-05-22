@@ -1,0 +1,7 @@
+kernel/sound/soc/omap/snd-soc-omap.ko
+kernel/sound/soc/omap/snd-soc-omap-mcbsp.ko
+kernel/sound/soc/omap/snd-soc-omap-hdmi-audio.ko
+kernel/sound/soc/omap/snd-soc-rx51.ko
+kernel/sound/soc/omap/snd-soc-am3517evm.ko
+kernel/sound/soc/omap/snd-soc-omap-twl4030.ko
+kernel/sound/soc/omap/snd-soc-omap3pandora.ko

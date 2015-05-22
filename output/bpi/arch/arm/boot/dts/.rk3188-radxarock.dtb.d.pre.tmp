@@ -1,0 +1,11 @@
+rk3188-radxarock.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3188-radxarock.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3188.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/rockchip.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/rk3188-cru.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/rk3188-cru-common.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3xxx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

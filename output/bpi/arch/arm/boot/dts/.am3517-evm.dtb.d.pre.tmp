@@ -1,0 +1,8 @@
+am3517-evm.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am3517-evm.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am3517.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

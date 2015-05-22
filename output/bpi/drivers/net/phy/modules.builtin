@@ -1,0 +1,11 @@
+kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/phy/swconfig.ko
+kernel/drivers/net/phy/marvell.ko
+kernel/drivers/net/phy/broadcom.ko
+kernel/drivers/net/phy/icplus.ko
+kernel/drivers/net/phy/at803x.ko
+kernel/drivers/net/phy/mdio-sun4i.ko
+kernel/drivers/net/phy/b53/b53_common.ko
+kernel/drivers/net/phy/b53/b53_srab.ko
+kernel/drivers/net/phy/b53/b53_mdio.ko
+kernel/drivers/net/phy/b53/b53_spi.ko

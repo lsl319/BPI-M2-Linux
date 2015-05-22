@@ -1,0 +1,1 @@
+cmd_drivers/net/wan/hdlc_ppp.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wan/hdlc_ppp.ko drivers/net/wan/hdlc_ppp.o drivers/net/wan/hdlc_ppp.mod.o

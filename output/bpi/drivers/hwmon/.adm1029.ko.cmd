@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/adm1029.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/adm1029.ko drivers/hwmon/adm1029.o drivers/hwmon/adm1029.mod.o

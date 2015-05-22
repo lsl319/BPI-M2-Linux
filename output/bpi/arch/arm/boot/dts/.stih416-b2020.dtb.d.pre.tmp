@@ -1,0 +1,14 @@
+stih416-b2020.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih416-b2020.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih416.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih41x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih416-clock.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/stih416-clks.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih416-pinctrl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/st-pincfg.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/phy/phy-miphy365x.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/reset-controller/stih416-resets.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih41x-b2020.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/stih41x-b2020x.dtsi

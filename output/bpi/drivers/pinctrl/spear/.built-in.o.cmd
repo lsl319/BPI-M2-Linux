@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/spear/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/pinctrl/spear/built-in.o drivers/pinctrl/spear/pinctrl-plgpio.o drivers/pinctrl/spear/pinctrl-spear.o drivers/pinctrl/spear/pinctrl-spear1310.o drivers/pinctrl/spear/pinctrl-spear1340.o 

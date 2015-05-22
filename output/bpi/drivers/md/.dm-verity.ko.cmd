@@ -1,0 +1,1 @@
+cmd_drivers/md/dm-verity.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/md/dm-verity.ko drivers/md/dm-verity.o drivers/md/dm-verity.mod.o

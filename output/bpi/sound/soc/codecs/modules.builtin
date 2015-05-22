@@ -1,0 +1,4 @@
+kernel/sound/soc/codecs/snd-soc-tlv320aic23.ko
+kernel/sound/soc/codecs/snd-soc-tlv320aic23-i2c.ko
+kernel/sound/soc/codecs/snd-soc-wm8753.ko
+kernel/sound/soc/codecs/snd-soc-wm8903.ko

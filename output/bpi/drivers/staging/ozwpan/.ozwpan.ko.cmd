@@ -1,0 +1,1 @@
+cmd_drivers/staging/ozwpan/ozwpan.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/ozwpan/ozwpan.ko drivers/staging/ozwpan/ozwpan.o drivers/staging/ozwpan/ozwpan.mod.o

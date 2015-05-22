@@ -1,0 +1,12 @@
+rk3066a-bqcurie2.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3066a-bqcurie2.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3066a.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/rockchip.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/rk3066a-cru.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/rk3188-cru-common.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3xxx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/tps65910.dtsi

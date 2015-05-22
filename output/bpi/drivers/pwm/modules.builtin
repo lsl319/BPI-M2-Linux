@@ -1,0 +1,3 @@
+kernel/drivers/pwm/pwm-ab8500.ko
+kernel/drivers/pwm/pwm-tegra.ko
+kernel/drivers/pwm/pwm-vt8500.ko

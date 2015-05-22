@@ -1,0 +1,1 @@
+cmd_drivers/memory/tegra/tegra-mc.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/memory/tegra/tegra-mc.o drivers/memory/tegra/mc.o drivers/memory/tegra/tegra30.o drivers/memory/tegra/tegra114.o drivers/memory/tegra/tegra124.o 

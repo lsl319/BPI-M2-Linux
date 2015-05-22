@@ -1,0 +1,1 @@
+cmd_arch/arm/boot/uImage := /bin/bash /home/pi/kernel/linux-4.0.2/scripts/mkuboot.sh -A arm -O linux -C none  -T kernel -a 0x40008000 -e 0x40008000 -n 'Linux-4.0.2-BPi-IoT' -d arch/arm/boot/zImage arch/arm/boot/uImage

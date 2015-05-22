@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/mdio-bcm-unimac.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/phy/mdio-bcm-unimac.ko drivers/net/phy/mdio-bcm-unimac.o drivers/net/phy/mdio-bcm-unimac.mod.o

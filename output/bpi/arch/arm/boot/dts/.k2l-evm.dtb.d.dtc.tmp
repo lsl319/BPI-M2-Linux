@@ -1,0 +1,1 @@
+arch/arm/boot/dts/k2l-evm.dtb: arch/arm/boot/dts/.k2l-evm.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/keystone-clocks.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/k2l-clocks.dtsi

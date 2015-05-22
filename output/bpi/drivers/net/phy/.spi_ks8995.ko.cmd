@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/spi_ks8995.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/phy/spi_ks8995.ko drivers/net/phy/spi_ks8995.o drivers/net/phy/spi_ks8995.mod.o

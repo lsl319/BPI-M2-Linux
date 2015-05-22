@@ -1,0 +1,9 @@
+imx6q-arm2.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-arm2.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-pinfunc.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/imx6qdl-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

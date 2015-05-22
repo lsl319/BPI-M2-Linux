@@ -1,0 +1,1 @@
+cmd_drivers/net/can/softing/softing.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/can/softing/softing.ko drivers/net/can/softing/softing.o drivers/net/can/softing/softing.mod.o

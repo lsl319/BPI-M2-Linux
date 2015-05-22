@@ -1,0 +1,1 @@
+cmd_drivers/media/i2c/soc_camera/rj54n1cb0c.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/i2c/soc_camera/rj54n1cb0c.ko drivers/media/i2c/soc_camera/rj54n1cb0c.o drivers/media/i2c/soc_camera/rj54n1cb0c.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/soc_camera/soc_scale_crop.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/platform/soc_camera/soc_scale_crop.ko drivers/media/platform/soc_camera/soc_scale_crop.o drivers/media/platform/soc_camera/soc_scale_crop.mod.o

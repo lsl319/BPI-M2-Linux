@@ -1,0 +1,7 @@
+kernel/drivers/net/wan/hdlc.ko
+kernel/drivers/net/wan/hdlc_raw.ko
+kernel/drivers/net/wan/hdlc_raw_eth.ko
+kernel/drivers/net/wan/hdlc_cisco.ko
+kernel/drivers/net/wan/hdlc_fr.ko
+kernel/drivers/net/wan/hdlc_ppp.ko
+kernel/drivers/net/wan/dlci.ko

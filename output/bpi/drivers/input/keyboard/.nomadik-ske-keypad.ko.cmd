@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/nomadik-ske-keypad.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/nomadik-ske-keypad.ko drivers/input/keyboard/nomadik-ske-keypad.o drivers/input/keyboard/nomadik-ske-keypad.mod.o

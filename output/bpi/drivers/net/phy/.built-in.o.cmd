@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/net/phy/built-in.o drivers/net/phy/libphy.o drivers/net/phy/swconfig.o drivers/net/phy/marvell.o drivers/net/phy/broadcom.o drivers/net/phy/icplus.o drivers/net/phy/b53/built-in.o drivers/net/phy/at803x.o drivers/net/phy/mdio-sun4i.o 

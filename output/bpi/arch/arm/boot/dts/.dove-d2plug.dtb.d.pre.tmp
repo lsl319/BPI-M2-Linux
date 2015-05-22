@@ -1,0 +1,3 @@
+dove-d2plug.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove-d2plug.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove.dtsi

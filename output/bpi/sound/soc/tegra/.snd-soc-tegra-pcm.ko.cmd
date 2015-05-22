@@ -1,0 +1,1 @@
+cmd_sound/soc/tegra/snd-soc-tegra-pcm.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/tegra/snd-soc-tegra-pcm.ko sound/soc/tegra/snd-soc-tegra-pcm.o sound/soc/tegra/snd-soc-tegra-pcm.mod.o

@@ -1,0 +1,13 @@
+kernel/drivers/spi/spidev.ko
+kernel/drivers/spi/spi-bitbang.ko
+kernel/drivers/spi/spi-cadence.ko
+kernel/drivers/spi/spi-omap2-mcspi.ko
+kernel/drivers/spi/spi-orion.ko
+kernel/drivers/spi/spi-pl022.ko
+kernel/drivers/spi/spi-sirf.ko
+kernel/drivers/spi/spi-sun4i.ko
+kernel/drivers/spi/spi-sun6i.ko
+kernel/drivers/spi/spi-tegra114.ko
+kernel/drivers/spi/spi-tegra20-sflash.ko
+kernel/drivers/spi/spi-tegra20-slink.ko
+kernel/drivers/spi/spi-xilinx.ko

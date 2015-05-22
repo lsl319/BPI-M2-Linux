@@ -1,0 +1,16 @@
+kernel/drivers/rtc/rtc-as3722.ko
+kernel/drivers/rtc/rtc-ds1307.ko
+kernel/drivers/rtc/rtc-em3027.ko
+kernel/drivers/rtc/rtc-max8907.ko
+kernel/drivers/rtc/rtc-max77686.ko
+kernel/drivers/rtc/rtc-mv.ko
+kernel/drivers/rtc/rtc-palmas.ko
+kernel/drivers/rtc/rtc-pl031.ko
+kernel/drivers/rtc/rtc-spear.ko
+kernel/drivers/rtc/rtc-sun6i.ko
+kernel/drivers/rtc/rtc-sunxi.ko
+kernel/drivers/rtc/rtc-tegra.ko
+kernel/drivers/rtc/rtc-twl.ko
+kernel/drivers/rtc/rtc-tps6586x.ko
+kernel/drivers/rtc/rtc-tps65910.ko
+kernel/drivers/rtc/rtc-vt8500.ko

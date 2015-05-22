@@ -1,0 +1,2 @@
+meson6-atv1200.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/meson6-atv1200.dts

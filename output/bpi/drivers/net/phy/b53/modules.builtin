@@ -1,0 +1,4 @@
+kernel/drivers/net/phy/b53/b53_common.ko
+kernel/drivers/net/phy/b53/b53_srab.ko
+kernel/drivers/net/phy/b53/b53_mdio.ko
+kernel/drivers/net/phy/b53/b53_spi.ko

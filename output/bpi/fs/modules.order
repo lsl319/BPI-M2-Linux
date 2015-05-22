@@ -1,0 +1,4 @@
+kernel/fs/isofs/isofs.ko
+kernel/fs/nfsd/nfsd.ko
+kernel/fs/cifs/cifs.ko
+kernel/fs/udf/udf.ko

@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/vt1211.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/vt1211.ko drivers/hwmon/vt1211.o drivers/hwmon/vt1211.mod.o

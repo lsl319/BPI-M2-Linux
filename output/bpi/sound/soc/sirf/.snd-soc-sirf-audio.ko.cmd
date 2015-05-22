@@ -1,0 +1,1 @@
+cmd_sound/soc/sirf/snd-soc-sirf-audio.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/sirf/snd-soc-sirf-audio.ko sound/soc/sirf/snd-soc-sirf-audio.o sound/soc/sirf/snd-soc-sirf-audio.mod.o

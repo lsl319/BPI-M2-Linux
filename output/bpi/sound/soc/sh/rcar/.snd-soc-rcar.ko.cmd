@@ -1,0 +1,1 @@
+cmd_sound/soc/sh/rcar/snd-soc-rcar.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/sh/rcar/snd-soc-rcar.ko sound/soc/sh/rcar/snd-soc-rcar.o sound/soc/sh/rcar/snd-soc-rcar.mod.o

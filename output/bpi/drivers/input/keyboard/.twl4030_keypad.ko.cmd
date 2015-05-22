@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/twl4030_keypad.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/twl4030_keypad.ko drivers/input/keyboard/twl4030_keypad.o drivers/input/keyboard/twl4030_keypad.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/regulator/userspace-consumer.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/regulator/userspace-consumer.ko drivers/regulator/userspace-consumer.o drivers/regulator/userspace-consumer.mod.o

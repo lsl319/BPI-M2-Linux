@@ -1,0 +1,4 @@
+kernel/drivers/xen/xen-evtchn.ko
+kernel/drivers/xen/xen-privcmd.ko
+kernel/drivers/xen/xenbus/xenbus_probe_frontend.ko
+kernel/drivers/xen/xenfs/xenfs.ko

@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-socfpga/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/mach-socfpga/built-in.o arch/arm/mach-socfpga/socfpga.o arch/arm/mach-socfpga/headsmp.o arch/arm/mach-socfpga/platsmp.o 

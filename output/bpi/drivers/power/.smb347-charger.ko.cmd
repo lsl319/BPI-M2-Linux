@@ -1,0 +1,1 @@
+cmd_drivers/power/smb347-charger.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/smb347-charger.ko drivers/power/smb347-charger.o drivers/power/smb347-charger.mod.o

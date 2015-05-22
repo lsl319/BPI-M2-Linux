@@ -1,0 +1,1 @@
+cmd_drivers/nfc/st21nfca/st21nfca_hci.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/nfc/st21nfca/st21nfca_hci.ko drivers/nfc/st21nfca/st21nfca_hci.o drivers/nfc/st21nfca/st21nfca_hci.mod.o

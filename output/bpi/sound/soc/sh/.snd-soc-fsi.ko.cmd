@@ -1,0 +1,1 @@
+cmd_sound/soc/sh/snd-soc-fsi.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/sh/snd-soc-fsi.ko sound/soc/sh/snd-soc-fsi.o sound/soc/sh/snd-soc-fsi.mod.o

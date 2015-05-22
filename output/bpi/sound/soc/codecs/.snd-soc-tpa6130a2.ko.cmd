@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-tpa6130a2.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/codecs/snd-soc-tpa6130a2.ko sound/soc/codecs/snd-soc-tpa6130a2.o sound/soc/codecs/snd-soc-tpa6130a2.mod.o

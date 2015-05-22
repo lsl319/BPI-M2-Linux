@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/p54/p54usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/p54/p54usb.ko drivers/net/wireless/p54/p54usb.o drivers/net/wireless/p54/p54usb.mod.o

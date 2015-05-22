@@ -1,0 +1,1 @@
+cmd_drivers/media/tuners/si2157.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/tuners/si2157.ko drivers/media/tuners/si2157.o drivers/media/tuners/si2157.mod.o

@@ -1,0 +1,24 @@
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/meson6-atv1200.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/meson6-atv1200.dts"
+# 48 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/meson6-atv1200.dts"
+/dts-v1/;
+/include/ "meson6.dtsi"
+
+/ {
+ model = "Geniatech ATV1200";
+ compatible = "geniatech,atv1200", "amlogic,meson6";
+
+ aliases {
+  serial0 = &uart_AO;
+ };
+
+ memory {
+  reg = <0x40000000 0x80000000>;
+ };
+};
+
+&uart_AO {
+ status = "okay";
+};

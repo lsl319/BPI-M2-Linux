@@ -1,0 +1,3 @@
+dove-dove-db.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove-dove-db.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dove.dtsi

@@ -1,0 +1,6 @@
+kernel/drivers/net/phy/smsc.ko
+kernel/drivers/net/phy/bcm7xxx.ko
+kernel/drivers/net/phy/bcm87xx.ko
+kernel/drivers/net/phy/realtek.ko
+kernel/drivers/net/phy/spi_ks8995.ko
+kernel/drivers/net/phy/mdio-bcm-unimac.ko

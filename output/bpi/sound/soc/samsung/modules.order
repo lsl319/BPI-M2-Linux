@@ -1,0 +1,11 @@
+kernel/sound/soc/samsung/snd-soc-s3c-dma.ko
+kernel/sound/soc/samsung/snd-soc-samsung-spdif.ko
+kernel/sound/soc/samsung/snd-soc-pcm.ko
+kernel/sound/soc/samsung/snd-soc-i2s.ko
+kernel/sound/soc/samsung/snd-soc-idma.ko
+kernel/sound/soc/samsung/snd-soc-smdk-wm8994.ko
+kernel/sound/soc/samsung/snd-soc-snow.ko
+kernel/sound/soc/samsung/snd-soc-smdk-spdif.ko
+kernel/sound/soc/samsung/snd-soc-smdk-wm8994pcm.ko
+kernel/sound/soc/samsung/snd-soc-odroidx2-max98090.ko
+kernel/sound/soc/samsung/snd-soc-arndale-rt5631.ko

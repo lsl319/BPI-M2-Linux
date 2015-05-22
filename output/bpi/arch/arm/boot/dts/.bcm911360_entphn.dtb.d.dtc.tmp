@@ -1,0 +1,1 @@
+arch/arm/boot/dts/bcm911360_entphn.dtb: arch/arm/boot/dts/.bcm911360_entphn.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm-cygnus-clock.dtsi

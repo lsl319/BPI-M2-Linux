@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/soc_camera/sh_mobile_csi2.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/platform/soc_camera/sh_mobile_csi2.ko drivers/media/platform/soc_camera/sh_mobile_csi2.o drivers/media/platform/soc_camera/sh_mobile_csi2.mod.o

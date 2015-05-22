@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/f71805f.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/f71805f.ko drivers/hwmon/f71805f.o drivers/hwmon/f71805f.mod.o

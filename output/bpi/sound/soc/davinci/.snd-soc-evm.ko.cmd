@@ -1,0 +1,1 @@
+cmd_sound/soc/davinci/snd-soc-evm.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/davinci/snd-soc-evm.ko sound/soc/davinci/snd-soc-evm.o sound/soc/davinci/snd-soc-evm.mod.o

@@ -1,0 +1,2 @@
+kernel/drivers/xen/xen-gntdev.ko
+kernel/drivers/xen/xen-gntalloc.ko

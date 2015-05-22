@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-tlv320aic31xx.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/codecs/snd-soc-tlv320aic31xx.ko sound/soc/codecs/snd-soc-tlv320aic31xx.o sound/soc/codecs/snd-soc-tlv320aic31xx.mod.o

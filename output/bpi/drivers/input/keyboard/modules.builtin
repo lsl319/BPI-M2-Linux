@@ -1,0 +1,7 @@
+kernel/drivers/input/keyboard/atkbd.ko
+kernel/drivers/input/keyboard/cros_ec_keyb.ko
+kernel/drivers/input/keyboard/gpio_keys.ko
+kernel/drivers/input/keyboard/samsung-keypad.ko
+kernel/drivers/input/keyboard/spear-keyboard.ko
+kernel/drivers/input/keyboard/st-keyscan.ko
+kernel/drivers/input/keyboard/tegra-kbc.ko

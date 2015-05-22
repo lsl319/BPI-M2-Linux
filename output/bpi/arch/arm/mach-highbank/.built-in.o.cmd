@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-highbank/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/mach-highbank/built-in.o arch/arm/mach-highbank/highbank.o arch/arm/mach-highbank/system.o arch/arm/mach-highbank/smc.o arch/arm/mach-highbank/pm.o 

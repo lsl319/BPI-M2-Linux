@@ -1,0 +1,1 @@
+cmd_drivers/scsi/xen-scsifront.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/scsi/xen-scsifront.ko drivers/scsi/xen-scsifront.o drivers/scsi/xen-scsifront.mod.o

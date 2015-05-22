@@ -1,0 +1,1 @@
+cmd_drivers/clk/qcom/clk-qcom.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/qcom/clk-qcom.o drivers/clk/qcom/common.o drivers/clk/qcom/clk-regmap.o drivers/clk/qcom/clk-pll.o drivers/clk/qcom/clk-rcg.o drivers/clk/qcom/clk-rcg2.o drivers/clk/qcom/clk-branch.o drivers/clk/qcom/clk-regmap-divider.o drivers/clk/qcom/clk-regmap-mux.o drivers/clk/qcom/reset.o 

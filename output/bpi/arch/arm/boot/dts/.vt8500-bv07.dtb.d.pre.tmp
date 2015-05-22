@@ -1,0 +1,2 @@
+vt8500-bv07.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/vt8500-bv07.dts

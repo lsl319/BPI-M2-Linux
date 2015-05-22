@@ -1,0 +1,5 @@
+hisi-x5hd2-dkb.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/hisi-x5hd2-dkb.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/hisi-x5hd2.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/hix5hd2-clock.h

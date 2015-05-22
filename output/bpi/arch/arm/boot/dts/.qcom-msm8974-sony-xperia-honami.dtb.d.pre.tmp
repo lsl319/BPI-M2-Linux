@@ -1,0 +1,6 @@
+qcom-msm8974-sony-xperia-honami.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/qcom-msm8974-sony-xperia-honami.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/qcom-msm8974.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/qcom,gcc-msm8974.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

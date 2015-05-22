@@ -1,0 +1,1 @@
+arch/arm/boot/dts/am335x-lxm.dtb: arch/arm/boot/dts/.am335x-lxm.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am33xx-clocks.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/tps65910.dtsi

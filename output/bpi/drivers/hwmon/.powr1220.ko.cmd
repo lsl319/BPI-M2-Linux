@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/powr1220.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/powr1220.ko drivers/hwmon/powr1220.o drivers/hwmon/powr1220.mod.o

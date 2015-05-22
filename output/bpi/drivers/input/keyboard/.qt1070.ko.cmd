@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/qt1070.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/qt1070.ko drivers/input/keyboard/qt1070.o drivers/input/keyboard/qt1070.mod.o

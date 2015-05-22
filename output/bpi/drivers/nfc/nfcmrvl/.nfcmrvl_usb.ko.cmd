@@ -1,0 +1,1 @@
+cmd_drivers/nfc/nfcmrvl/nfcmrvl_usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/nfc/nfcmrvl/nfcmrvl_usb.ko drivers/nfc/nfcmrvl/nfcmrvl_usb.o drivers/nfc/nfcmrvl/nfcmrvl_usb.mod.o

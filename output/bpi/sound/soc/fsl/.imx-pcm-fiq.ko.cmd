@@ -1,0 +1,1 @@
+cmd_sound/soc/fsl/imx-pcm-fiq.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/fsl/imx-pcm-fiq.ko sound/soc/fsl/imx-pcm-fiq.o sound/soc/fsl/imx-pcm-fiq.mod.o

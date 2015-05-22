@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-keystone/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/mach-keystone/built-in.o arch/arm/mach-keystone/keystone.o arch/arm/mach-keystone/smc.o arch/arm/mach-keystone/platsmp.o arch/arm/mach-keystone/pm_domain.o 

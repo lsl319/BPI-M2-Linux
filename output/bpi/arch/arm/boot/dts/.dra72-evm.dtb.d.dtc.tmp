@@ -1,0 +1,1 @@
+arch/arm/boot/dts/dra72-evm.dtb: arch/arm/boot/dts/.dra72-evm.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dra7xx-clocks.dtsi

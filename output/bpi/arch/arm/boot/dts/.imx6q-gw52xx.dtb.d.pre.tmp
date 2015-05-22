@@ -1,0 +1,11 @@
+imx6q-gw52xx.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-gw52xx.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6q-pinfunc.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/imx6qdl-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx6qdl-gw52xx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h

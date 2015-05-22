@@ -1,0 +1,1 @@
+cmd_drivers/power/isp1704_charger.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/isp1704_charger.ko drivers/power/isp1704_charger.o drivers/power/isp1704_charger.mod.o

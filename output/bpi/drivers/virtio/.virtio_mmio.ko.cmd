@@ -1,0 +1,1 @@
+cmd_drivers/virtio/virtio_mmio.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/virtio/virtio_mmio.ko drivers/virtio/virtio_mmio.o drivers/virtio/virtio_mmio.mod.o

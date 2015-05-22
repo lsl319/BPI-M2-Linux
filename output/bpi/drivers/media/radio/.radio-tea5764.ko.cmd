@@ -1,0 +1,1 @@
+cmd_drivers/media/radio/radio-tea5764.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/radio/radio-tea5764.ko drivers/media/radio/radio-tea5764.o drivers/media/radio/radio-tea5764.mod.o

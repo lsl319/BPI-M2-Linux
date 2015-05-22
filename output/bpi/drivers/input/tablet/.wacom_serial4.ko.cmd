@@ -1,0 +1,1 @@
+cmd_drivers/input/tablet/wacom_serial4.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/tablet/wacom_serial4.ko drivers/input/tablet/wacom_serial4.o drivers/input/tablet/wacom_serial4.mod.o

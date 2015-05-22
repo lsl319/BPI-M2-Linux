@@ -1,0 +1,1 @@
+cmd_drivers/bluetooth/ath3k.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/bluetooth/ath3k.ko drivers/bluetooth/ath3k.o drivers/bluetooth/ath3k.mod.o

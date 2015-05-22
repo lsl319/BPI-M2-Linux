@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/amc6821.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/amc6821.ko drivers/hwmon/amc6821.o drivers/hwmon/amc6821.mod.o

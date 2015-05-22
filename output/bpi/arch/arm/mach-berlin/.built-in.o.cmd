@@ -1,0 +1,1 @@
+cmd_arch/arm/mach-berlin/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o arch/arm/mach-berlin/built-in.o arch/arm/mach-berlin/berlin.o arch/arm/mach-berlin/headsmp.o arch/arm/mach-berlin/platsmp.o 

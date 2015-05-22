@@ -1,0 +1,161 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+__visible struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x6cec1955, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xb077e70a, __VMLINUX_SYMBOL_STR(clk_unprepare) },
+	{ 0x92b57248, __VMLINUX_SYMBOL_STR(flush_work) },
+	{ 0x12635f31, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0xd616f03b, __VMLINUX_SYMBOL_STR(v4l2_event_unsubscribe) },
+	{ 0xeb7b51c2, __VMLINUX_SYMBOL_STR(__pm_runtime_idle) },
+	{ 0x9cdd22f9, __VMLINUX_SYMBOL_STR(vb2_dma_contig_init_ctx) },
+	{ 0x815588a6, __VMLINUX_SYMBOL_STR(clk_enable) },
+	{ 0x648af39f, __VMLINUX_SYMBOL_STR(video_device_release_empty) },
+	{ 0xf982d4b2, __VMLINUX_SYMBOL_STR(debugfs_create_dir) },
+	{ 0x3e98bf60, __VMLINUX_SYMBOL_STR(__pm_runtime_disable) },
+	{ 0xc7ffa915, __VMLINUX_SYMBOL_STR(v4l2_m2m_qbuf) },
+	{ 0x95544868, __VMLINUX_SYMBOL_STR(v4l2_event_queue_fh) },
+	{ 0x51eafc8e, __VMLINUX_SYMBOL_STR(param_ops_int) },
+	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
+	{ 0x43a53735, __VMLINUX_SYMBOL_STR(__alloc_workqueue_key) },
+	{ 0xaa7982a, __VMLINUX_SYMBOL_STR(v4l2_m2m_try_schedule) },
+	{ 0xbff80598, __VMLINUX_SYMBOL_STR(v4l2_m2m_ctx_init) },
+	{ 0x2faa2bb5, __VMLINUX_SYMBOL_STR(arm_dma_ops) },
+	{ 0x18fef9cb, __VMLINUX_SYMBOL_STR(xen_start_info) },
+	{ 0x3ea99436, __VMLINUX_SYMBOL_STR(v4l2_device_unregister) },
+	{ 0xb6e6d99d, __VMLINUX_SYMBOL_STR(clk_disable) },
+	{ 0x47afd5c3, __VMLINUX_SYMBOL_STR(v4l2_ctrl_handler_free) },
+	{ 0x6802f14f, __VMLINUX_SYMBOL_STR(v4l2_ctrl_new_std) },
+	{ 0xf7802486, __VMLINUX_SYMBOL_STR(__aeabi_uidivmod) },
+	{ 0x412fc244, __VMLINUX_SYMBOL_STR(vb2_ops_wait_prepare) },
+	{ 0x85eccd25, __VMLINUX_SYMBOL_STR(devm_ioremap_resource) },
+	{ 0xc6fca5ad, __VMLINUX_SYMBOL_STR(v4l2_m2m_release) },
+	{ 0xe8192ece, __VMLINUX_SYMBOL_STR(__video_register_device) },
+	{ 0x3c7e296f, __VMLINUX_SYMBOL_STR(mutex_unlock) },
+	{ 0x13517bf3, __VMLINUX_SYMBOL_STR(v4l2_m2m_fop_mmap) },
+	{ 0x52b5cb10, __VMLINUX_SYMBOL_STR(__pm_runtime_resume) },
+	{ 0xb0f1d512, __VMLINUX_SYMBOL_STR(debugfs_remove_recursive) },
+	{ 0x6c9c3d9d, __VMLINUX_SYMBOL_STR(__platform_driver_register) },
+	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
+	{ 0xb48677a, __VMLINUX_SYMBOL_STR(__kfifo_init) },
+	{ 0x171345dd, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_streamon) },
+	{ 0x733c3b54, __VMLINUX_SYMBOL_STR(kasprintf) },
+	{ 0xba4e25db, __VMLINUX_SYMBOL_STR(v4l2_device_register) },
+	{ 0x275ef902, __VMLINUX_SYMBOL_STR(__init_waitqueue_head) },
+	{ 0xb221c15a, __VMLINUX_SYMBOL_STR(v4l2_ctrl_new_std_menu) },
+	{ 0x4791b790, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_create_bufs) },
+	{ 0xfa2a45e, __VMLINUX_SYMBOL_STR(__memzero) },
+	{ 0x5f754e5a, __VMLINUX_SYMBOL_STR(memset) },
+	{ 0xfe7c09ed, __VMLINUX_SYMBOL_STR(vb2_vmalloc_memops) },
+	{ 0x2d833725, __VMLINUX_SYMBOL_STR(xen_dma_ops) },
+	{ 0xc616a3f8, __VMLINUX_SYMBOL_STR(dev_err) },
+	{ 0x3d79ffdd, __VMLINUX_SYMBOL_STR(v4l2_event_subscribe) },
+	{ 0x7fe91e4f, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_streamoff) },
+	{ 0x534c6f90, __VMLINUX_SYMBOL_STR(__mutex_init) },
+	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
+	{ 0x24f39c39, __VMLINUX_SYMBOL_STR(reset_control_reset) },
+	{ 0x7bc88636, __VMLINUX_SYMBOL_STR(video_unregister_device) },
+	{ 0xe57f0426, __VMLINUX_SYMBOL_STR(vb2_dma_contig_cleanup_ctx) },
+	{ 0x7c338a09, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_reqbufs) },
+	{ 0xb1587bd5, __VMLINUX_SYMBOL_STR(v4l2_fh_init) },
+	{ 0xbd9a6017, __VMLINUX_SYMBOL_STR(v4l2_ctrl_subscribe_event) },
+	{ 0x321f91dd, __VMLINUX_SYMBOL_STR(vb2_plane_vaddr) },
+	{ 0x1d690318, __VMLINUX_SYMBOL_STR(vb2_buffer_done) },
+	{ 0x51de0ab0, __VMLINUX_SYMBOL_STR(debugfs_remove) },
+	{ 0x73e20c1c, __VMLINUX_SYMBOL_STR(strlcpy) },
+	{ 0x4980c3cc, __VMLINUX_SYMBOL_STR(mutex_lock) },
+	{ 0x8c03d20c, __VMLINUX_SYMBOL_STR(destroy_workqueue) },
+	{ 0x8f5d3eae, __VMLINUX_SYMBOL_STR(platform_get_resource) },
+	{ 0x8e865d3c, __VMLINUX_SYMBOL_STR(arm_delay_ops) },
+	{ 0x29edba3, __VMLINUX_SYMBOL_STR(request_firmware_nowait) },
+	{ 0x62260815, __VMLINUX_SYMBOL_STR(devm_reset_control_get) },
+	{ 0x20321bcc, __VMLINUX_SYMBOL_STR(of_match_device) },
+	{ 0x2196324, __VMLINUX_SYMBOL_STR(__aeabi_idiv) },
+	{ 0xe409cd86, __VMLINUX_SYMBOL_STR(vb2_plane_cookie) },
+	{ 0xc77105e1, __VMLINUX_SYMBOL_STR(v4l2_m2m_get_vq) },
+	{ 0x61d413da, __VMLINUX_SYMBOL_STR(kmem_cache_alloc) },
+	{ 0xe0801f9, __VMLINUX_SYMBOL_STR(of_get_named_gen_pool) },
+	{ 0xf5ef842e, __VMLINUX_SYMBOL_STR(v4l_bound_align_image) },
+	{ 0x338b32d4, __VMLINUX_SYMBOL_STR(v4l2_m2m_fop_poll) },
+	{ 0xa4e10cc1, __VMLINUX_SYMBOL_STR(pm_runtime_enable) },
+	{ 0x459e133f, __VMLINUX_SYMBOL_STR(v4l2_m2m_get_curr_priv) },
+	{ 0xd2142e4b, __VMLINUX_SYMBOL_STR(video_devdata) },
+	{ 0xdb7305a1, __VMLINUX_SYMBOL_STR(__stack_chk_fail) },
+	{ 0x3bd1b1f6, __VMLINUX_SYMBOL_STR(msecs_to_jiffies) },
+	{ 0xd3ddc28f, __VMLINUX_SYMBOL_STR(v4l2_m2m_buf_queue) },
+	{ 0xf1fcc3fd, __VMLINUX_SYMBOL_STR(platform_get_irq_byname) },
+	{ 0xec360f26, __VMLINUX_SYMBOL_STR(v4l2_ctrl_handler_setup) },
+	{ 0x7c9a7371, __VMLINUX_SYMBOL_STR(clk_prepare) },
+	{ 0xf59efeff, __VMLINUX_SYMBOL_STR(__pm_runtime_set_status) },
+	{ 0xe00e95d5, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_querybuf) },
+	{ 0x961299fd, __VMLINUX_SYMBOL_STR(gen_pool_dma_alloc) },
+	{ 0xcd41c085, __VMLINUX_SYMBOL_STR(devm_clk_get) },
+	{ 0x22abb69, __VMLINUX_SYMBOL_STR(v4l2_m2m_ioctl_expbuf) },
+	{ 0xbba58683, __VMLINUX_SYMBOL_STR(dev_get_gen_pool) },
+	{ 0xc17a2f6f, __VMLINUX_SYMBOL_STR(__dynamic_dev_dbg) },
+	{ 0x1e7a0021, __VMLINUX_SYMBOL_STR(vb2_dma_contig_memops) },
+	{ 0x37a0cba, __VMLINUX_SYMBOL_STR(kfree) },
+	{ 0x9d669763, __VMLINUX_SYMBOL_STR(memcpy) },
+	{ 0xe908dfb0, __VMLINUX_SYMBOL_STR(debugfs_create_blob) },
+	{ 0x731dba7a, __VMLINUX_SYMBOL_STR(xen_domain_type) },
+	{ 0xbf1d3501, __VMLINUX_SYMBOL_STR(v4l2_ctrl_handler_init_class) },
+	{ 0x8a0ee014, __VMLINUX_SYMBOL_STR(v4l2_m2m_dqbuf) },
+	{ 0xd5b4eb3d, __VMLINUX_SYMBOL_STR(v4l2_m2m_buf_remove) },
+	{ 0x64757ecd, __VMLINUX_SYMBOL_STR(vb2_ops_wait_finish) },
+	{ 0xbf5c07b8, __VMLINUX_SYMBOL_STR(v4l2_fh_add) },
+	{ 0xf25b8e7b, __VMLINUX_SYMBOL_STR(v4l2_m2m_ctx_release) },
+	{ 0x786a7c34, __VMLINUX_SYMBOL_STR(dev_warn) },
+	{ 0x9880bb8d, __VMLINUX_SYMBOL_STR(v4l2_fh_del) },
+	{ 0xefd6cf06, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr0) },
+	{ 0xf23fcb99, __VMLINUX_SYMBOL_STR(__kfifo_in) },
+	{ 0x8f678b07, __VMLINUX_SYMBOL_STR(__stack_chk_guard) },
+	{ 0x676bbc0f, __VMLINUX_SYMBOL_STR(_set_bit) },
+	{ 0xb2d48a2e, __VMLINUX_SYMBOL_STR(queue_work_on) },
+	{ 0xd4669fad, __VMLINUX_SYMBOL_STR(complete) },
+	{ 0xb81960ca, __VMLINUX_SYMBOL_STR(snprintf) },
+	{ 0x7a06d01f, __VMLINUX_SYMBOL_STR(platform_get_irq) },
+	{ 0x2d69c214, __VMLINUX_SYMBOL_STR(platform_driver_unregister) },
+	{ 0x49ebacbd, __VMLINUX_SYMBOL_STR(_clear_bit) },
+	{ 0xa1f08311, __VMLINUX_SYMBOL_STR(devm_kmalloc) },
+	{ 0x7cf9099, __VMLINUX_SYMBOL_STR(wait_for_completion_timeout) },
+	{ 0x3330a47d, __VMLINUX_SYMBOL_STR(gen_pool_free) },
+	{ 0x5dcf6341, __VMLINUX_SYMBOL_STR(outer_cache) },
+	{ 0xdb533ab0, __VMLINUX_SYMBOL_STR(devm_request_threaded_irq) },
+	{ 0x7ac420a7, __VMLINUX_SYMBOL_STR(v4l2_m2m_next_buf) },
+	{ 0xd0f1ee48, __VMLINUX_SYMBOL_STR(release_firmware) },
+	{ 0xf657b1db, __VMLINUX_SYMBOL_STR(video_ioctl2) },
+	{ 0x7cf1b2fc, __VMLINUX_SYMBOL_STR(v4l2_m2m_job_finish) },
+	{ 0x479cae67, __VMLINUX_SYMBOL_STR(v4l2_fh_exit) },
+	{ 0x5ee285fe, __VMLINUX_SYMBOL_STR(vb2_queue_init) },
+	{ 0x17eb0eee, __VMLINUX_SYMBOL_STR(v4l2_m2m_init) },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=videobuf2-dma-contig,v4l2-mem2mem";
+
+MODULE_ALIAS("of:N*T*Cfsl,imx27-vpu*");
+MODULE_ALIAS("of:N*T*Cfsl,imx53-vpu*");
+MODULE_ALIAS("of:N*T*Cfsl,imx6q-vpu*");
+MODULE_ALIAS("of:N*T*Cfsl,imx6dl-vpu*");
+MODULE_ALIAS("platform:coda-imx27");
+
+MODULE_INFO(srcversion, "29AA01A194D3E8E88797D01");

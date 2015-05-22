@@ -1,0 +1,6 @@
+r8a7794-alt.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/r8a7794-alt.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/r8a7794.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/r8a7794-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h

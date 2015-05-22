@@ -1,0 +1,1 @@
+cmd_drivers/reset/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/reset/built-in.o drivers/reset/core.o drivers/reset/reset-socfpga.o drivers/reset/reset-berlin.o drivers/reset/reset-sunxi.o drivers/reset/sti/built-in.o 

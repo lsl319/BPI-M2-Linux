@@ -1,0 +1,1 @@
+cmd_drivers/nfc/trf7970a.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/nfc/trf7970a.ko drivers/nfc/trf7970a.o drivers/nfc/trf7970a.mod.o

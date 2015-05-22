@@ -1,0 +1,7 @@
+dm8168-evm.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm8168-evm.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x-clocks.dtsi

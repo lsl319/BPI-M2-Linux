@@ -1,0 +1,1 @@
+cmd_drivers/memory/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/memory/built-in.o drivers/memory/omap-gpmc.o drivers/memory/mvebu-devbus.o drivers/memory/tegra20-mc.o drivers/memory/tegra/built-in.o 

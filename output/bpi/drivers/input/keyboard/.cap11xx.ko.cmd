@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/cap11xx.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/cap11xx.ko drivers/input/keyboard/cap11xx.o drivers/input/keyboard/cap11xx.mod.o

@@ -1,0 +1,12 @@
+rk3288-firefly-beta.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3288-firefly-beta.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3288-firefly.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3288.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/rockchip.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/rk3288-cru.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/rk3288-thermal.dtsi

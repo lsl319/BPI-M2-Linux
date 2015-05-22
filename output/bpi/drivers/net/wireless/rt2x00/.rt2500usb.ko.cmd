@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/rt2x00/rt2500usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/rt2x00/rt2500usb.ko drivers/net/wireless/rt2x00/rt2500usb.o drivers/net/wireless/rt2x00/rt2500usb.mod.o

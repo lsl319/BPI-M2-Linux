@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/ti/wlcore/wlcore_spi.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/ti/wlcore/wlcore_spi.ko drivers/net/wireless/ti/wlcore/wlcore_spi.o drivers/net/wireless/ti/wlcore/wlcore_spi.mod.o

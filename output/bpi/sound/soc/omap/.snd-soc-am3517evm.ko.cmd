@@ -1,0 +1,1 @@
+cmd_sound/soc/omap/snd-soc-am3517evm.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/omap/snd-soc-am3517evm.ko sound/soc/omap/snd-soc-am3517evm.o sound/soc/omap/snd-soc-am3517evm.mod.o

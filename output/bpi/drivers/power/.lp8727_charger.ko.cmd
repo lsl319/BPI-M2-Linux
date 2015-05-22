@@ -1,0 +1,1 @@
+cmd_drivers/power/lp8727_charger.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/lp8727_charger.ko drivers/power/lp8727_charger.o drivers/power/lp8727_charger.mod.o

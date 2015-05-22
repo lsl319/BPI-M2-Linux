@@ -1,0 +1,1 @@
+cmd_sound/usb/bcd2000/snd-bcd2000.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/usb/bcd2000/snd-bcd2000.ko sound/usb/bcd2000/snd-bcd2000.o sound/usb/bcd2000/snd-bcd2000.mod.o

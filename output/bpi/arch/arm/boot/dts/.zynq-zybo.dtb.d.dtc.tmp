@@ -1,0 +1,1 @@
+arch/arm/boot/dts/zynq-zybo.dtb: arch/arm/boot/dts/.zynq-zybo.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/zynq-7000.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

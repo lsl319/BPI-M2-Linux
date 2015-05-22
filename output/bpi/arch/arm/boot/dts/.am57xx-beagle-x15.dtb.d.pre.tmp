@@ -1,0 +1,10 @@
+am57xx-beagle-x15.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am57xx-beagle-x15.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dra74x.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dra7.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/dra.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clk/ti-dra7-atl.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h

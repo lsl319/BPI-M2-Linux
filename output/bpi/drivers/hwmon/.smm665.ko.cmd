@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/smm665.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/smm665.ko drivers/hwmon/smm665.o drivers/hwmon/smm665.mod.o

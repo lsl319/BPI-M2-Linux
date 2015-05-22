@@ -1,0 +1,1 @@
+cmd_sound/drivers/snd-portman2x4.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/drivers/snd-portman2x4.ko sound/drivers/snd-portman2x4.o sound/drivers/snd-portman2x4.mod.o

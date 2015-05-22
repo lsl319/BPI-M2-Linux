@@ -1,0 +1,1 @@
+cmd_drivers/pwm/pwm-fsl-ftm.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/pwm/pwm-fsl-ftm.ko drivers/pwm/pwm-fsl-ftm.o drivers/pwm/pwm-fsl-ftm.mod.o

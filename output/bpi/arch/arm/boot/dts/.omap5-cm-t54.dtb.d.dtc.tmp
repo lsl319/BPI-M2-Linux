@@ -1,0 +1,1 @@
+arch/arm/boot/dts/omap5-cm-t54.dtb: arch/arm/boot/dts/.omap5-cm-t54.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap54xx-clocks.dtsi

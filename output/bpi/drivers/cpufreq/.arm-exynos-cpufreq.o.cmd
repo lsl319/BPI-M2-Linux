@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/arm-exynos-cpufreq.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/cpufreq/arm-exynos-cpufreq.o drivers/cpufreq/exynos-cpufreq.o drivers/cpufreq/exynos4210-cpufreq.o drivers/cpufreq/exynos4x12-cpufreq.o drivers/cpufreq/exynos5250-cpufreq.o 

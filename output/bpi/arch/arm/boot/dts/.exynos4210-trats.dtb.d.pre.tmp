@@ -1,0 +1,12 @@
+exynos4210-trats.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4210-trats.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4210.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos4.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos-audss-clk.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4412-tmu-sensor-conf.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal_exynos.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4210-pinctrl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4-cpu-thermal.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal.h

@@ -1,0 +1,1 @@
+cmd_drivers/net/phy/b53/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/net/phy/b53/built-in.o drivers/net/phy/b53/b53_common.o drivers/net/phy/b53/b53_phy_fixup.o drivers/net/phy/b53/b53_srab.o drivers/net/phy/b53/b53_mdio.o drivers/net/phy/b53/b53_spi.o 

@@ -1,0 +1,11 @@
+exynos5420-smdk5420.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5420-smdk5420.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5420.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos5420.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5420-pinctrl.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos-audss-clk.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos4412-tmu-sensor-conf.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal_exynos.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5420-trip-points.dtsi

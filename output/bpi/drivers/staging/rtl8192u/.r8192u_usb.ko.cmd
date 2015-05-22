@@ -1,0 +1,1 @@
+cmd_drivers/staging/rtl8192u/r8192u_usb.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/rtl8192u/r8192u_usb.ko drivers/staging/rtl8192u/r8192u_usb.o drivers/staging/rtl8192u/r8192u_usb.mod.o

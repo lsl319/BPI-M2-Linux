@@ -1,0 +1,4 @@
+kernel/drivers/mfd/wm8994-core.ko
+kernel/drivers/mfd/wm8994-irq.ko
+kernel/drivers/mfd/wm8994-regmap.ko
+kernel/drivers/mfd/wl1273-core.ko

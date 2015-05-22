@@ -1,0 +1,5 @@
+kernel/drivers/thermal/thermal_sys.ko
+kernel/drivers/thermal/armada_thermal.ko
+kernel/drivers/thermal/st/st_thermal.ko
+kernel/drivers/thermal/st/st_thermal_syscfg.ko
+kernel/drivers/thermal/st/st_thermal_memmap.ko

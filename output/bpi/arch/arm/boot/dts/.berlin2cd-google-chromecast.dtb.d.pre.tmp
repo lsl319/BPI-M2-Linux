@@ -1,0 +1,8 @@
+berlin2cd-google-chromecast.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/berlin2cd-google-chromecast.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/berlin2cd.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/berlin2.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h

@@ -1,0 +1,1 @@
+cmd_drivers/isdn/gigaset/gigaset.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/isdn/gigaset/gigaset.ko drivers/isdn/gigaset/gigaset.o drivers/isdn/gigaset/gigaset.mod.o

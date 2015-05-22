@@ -1,0 +1,1 @@
+cmd_crypto/twofish_generic.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o crypto/twofish_generic.ko crypto/twofish_generic.o crypto/twofish_generic.mod.o

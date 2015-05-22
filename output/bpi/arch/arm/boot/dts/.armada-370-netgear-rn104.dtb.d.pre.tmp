@@ -1,0 +1,6 @@
+armada-370-netgear-rn104.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-netgear-rn104.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/input/input.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/armada-370-xp.dtsi

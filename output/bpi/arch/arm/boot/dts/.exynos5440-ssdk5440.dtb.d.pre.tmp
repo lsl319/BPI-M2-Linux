@@ -1,0 +1,8 @@
+exynos5440-ssdk5440.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5440-ssdk5440.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5440.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/exynos5440.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5440-tmu-sensor-conf.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/thermal/thermal_exynos.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/exynos5440-trip-points.dtsi

@@ -1,0 +1,1 @@
+cmd_sound/drivers/snd-serial-u16550.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/drivers/snd-serial-u16550.ko sound/drivers/snd-serial-u16550.o sound/drivers/snd-serial-u16550.mod.o

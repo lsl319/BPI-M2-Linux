@@ -1,0 +1,1 @@
+cmd_drivers/watchdog/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/watchdog/built-in.o drivers/watchdog/watchdog.o drivers/watchdog/sp805_wdt.o drivers/watchdog/orion_wdt.o drivers/watchdog/sunxi_wdt.o drivers/watchdog/ux500_wdt.o drivers/watchdog/sirfsoc_wdt.o drivers/watchdog/meson_wdt.o drivers/watchdog/of_xilinx_wdt.o 

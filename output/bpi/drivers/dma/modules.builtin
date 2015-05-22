@@ -1,0 +1,9 @@
+kernel/drivers/dma/virt-dma.ko
+kernel/drivers/dma/imx-sdma.ko
+kernel/drivers/dma/imx-dma.ko
+kernel/drivers/dma/sirf-dma.ko
+kernel/drivers/dma/pl330.ko
+kernel/drivers/dma/omap-dma.ko
+kernel/drivers/dma/dw/dw_dmac_core.ko
+kernel/drivers/dma/dw/dw_dmac.ko
+kernel/drivers/dma/xilinx/xilinx_vdma.ko

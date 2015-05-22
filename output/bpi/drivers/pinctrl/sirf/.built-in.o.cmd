@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/sirf/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/pinctrl/sirf/built-in.o drivers/pinctrl/sirf/pinctrl-sirf.o drivers/pinctrl/sirf/pinctrl-prima2.o drivers/pinctrl/sirf/pinctrl-atlas6.o 

@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/mac80211_hwsim.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/wireless/mac80211_hwsim.ko drivers/net/wireless/mac80211_hwsim.o drivers/net/wireless/mac80211_hwsim.mod.o

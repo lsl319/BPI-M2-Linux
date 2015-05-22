@@ -1,0 +1,1 @@
+cmd_drivers/staging/rts5208/rts5208.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/rts5208/rts5208.ko drivers/staging/rts5208/rts5208.o drivers/staging/rts5208/rts5208.mod.o

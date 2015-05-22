@@ -1,0 +1,1 @@
+cmd_drivers/power/generic-adc-battery.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/generic-adc-battery.ko drivers/power/generic-adc-battery.o drivers/power/generic-adc-battery.mod.o

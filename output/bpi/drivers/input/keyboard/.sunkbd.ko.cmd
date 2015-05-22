@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/sunkbd.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/sunkbd.ko drivers/input/keyboard/sunkbd.o drivers/input/keyboard/sunkbd.mod.o

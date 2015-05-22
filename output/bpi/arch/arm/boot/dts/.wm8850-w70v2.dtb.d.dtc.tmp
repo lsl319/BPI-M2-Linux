@@ -1,0 +1,1 @@
+arch/arm/boot/dts/wm8850-w70v2.dtb: arch/arm/boot/dts/.wm8850-w70v2.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/wm8850.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

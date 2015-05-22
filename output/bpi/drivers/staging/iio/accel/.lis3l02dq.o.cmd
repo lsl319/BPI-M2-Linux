@@ -1,0 +1,1 @@
+cmd_drivers/staging/iio/accel/lis3l02dq.o := arm-linux-gnueabihf-ld -EL    -r -o drivers/staging/iio/accel/lis3l02dq.o drivers/staging/iio/accel/lis3l02dq_core.o drivers/staging/iio/accel/lis3l02dq_ring.o 

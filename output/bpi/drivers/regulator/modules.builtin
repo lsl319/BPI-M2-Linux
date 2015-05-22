@@ -1,0 +1,17 @@
+kernel/drivers/regulator/fixed.ko
+kernel/drivers/regulator/as3722-regulator.ko
+kernel/drivers/regulator/axp20x-regulator.ko
+kernel/drivers/regulator/bcm590xx-regulator.ko
+kernel/drivers/regulator/gpio-regulator.ko
+kernel/drivers/regulator/max8907-regulator.ko
+kernel/drivers/regulator/max77686.ko
+kernel/drivers/regulator/palmas-regulator.ko
+kernel/drivers/regulator/tps51632-regulator.ko
+kernel/drivers/regulator/s2mps11.ko
+kernel/drivers/regulator/s5m8767.ko
+kernel/drivers/regulator/tps62360-regulator.ko
+kernel/drivers/regulator/tps65090-regulator.ko
+kernel/drivers/regulator/tps6586x-regulator.ko
+kernel/drivers/regulator/tps65910-regulator.ko
+kernel/drivers/regulator/twl-regulator.ko
+kernel/drivers/regulator/vexpress.ko

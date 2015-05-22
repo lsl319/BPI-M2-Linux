@@ -1,0 +1,7 @@
+kernel/drivers/watchdog/sp805_wdt.ko
+kernel/drivers/watchdog/orion_wdt.ko
+kernel/drivers/watchdog/sunxi_wdt.ko
+kernel/drivers/watchdog/ux500_wdt.ko
+kernel/drivers/watchdog/sirfsoc_wdt.ko
+kernel/drivers/watchdog/meson_wdt.ko
+kernel/drivers/watchdog/of_xilinx_wdt.ko

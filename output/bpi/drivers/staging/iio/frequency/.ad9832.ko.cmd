@@ -1,0 +1,1 @@
+cmd_drivers/staging/iio/frequency/ad9832.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/iio/frequency/ad9832.ko drivers/staging/iio/frequency/ad9832.o drivers/staging/iio/frequency/ad9832.mod.o

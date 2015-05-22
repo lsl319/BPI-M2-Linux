@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/max1111.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/max1111.ko drivers/hwmon/max1111.o drivers/hwmon/max1111.mod.o

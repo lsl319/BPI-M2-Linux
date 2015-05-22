@@ -1,0 +1,2 @@
+prima2-evb.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/prima2-evb.dts

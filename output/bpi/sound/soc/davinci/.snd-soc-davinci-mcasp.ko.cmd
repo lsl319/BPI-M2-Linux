@@ -1,0 +1,1 @@
+cmd_sound/soc/davinci/snd-soc-davinci-mcasp.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o sound/soc/davinci/snd-soc-davinci-mcasp.ko sound/soc/davinci/snd-soc-davinci-mcasp.o sound/soc/davinci/snd-soc-davinci-mcasp.mod.o

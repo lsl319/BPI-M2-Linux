@@ -1,0 +1,1 @@
+cmd_drivers/input/tablet/acecad.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/tablet/acecad.ko drivers/input/tablet/acecad.o drivers/input/tablet/acecad.mod.o

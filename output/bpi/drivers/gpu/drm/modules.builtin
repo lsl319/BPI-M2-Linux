@@ -1,0 +1,5 @@
+kernel/drivers/gpu/drm/drm_kms_helper.ko
+kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/msm/msm.ko
+kernel/drivers/gpu/drm/panel/panel-simple.ko
+kernel/drivers/gpu/drm/tegra/tegra-drm.ko

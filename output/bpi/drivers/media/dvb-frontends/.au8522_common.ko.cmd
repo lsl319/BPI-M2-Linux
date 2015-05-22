@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/au8522_common.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/au8522_common.ko drivers/media/dvb-frontends/au8522_common.o drivers/media/dvb-frontends/au8522_common.mod.o

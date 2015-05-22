@@ -1,0 +1,1 @@
+arch/arm/boot/dts/spear1340-evb.dtb: arch/arm/boot/dts/.spear1340-evb.dtb.dts.tmp /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/spear1340.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/spear13xx.dtsi /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

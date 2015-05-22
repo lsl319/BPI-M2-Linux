@@ -1,0 +1,1 @@
+cmd_drivers/net/can/grcan.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/net/can/grcan.ko drivers/net/can/grcan.o drivers/net/can/grcan.mod.o

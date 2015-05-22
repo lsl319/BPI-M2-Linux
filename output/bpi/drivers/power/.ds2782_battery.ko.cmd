@@ -1,0 +1,1 @@
+cmd_drivers/power/ds2782_battery.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/ds2782_battery.ko drivers/power/ds2782_battery.o drivers/power/ds2782_battery.mod.o

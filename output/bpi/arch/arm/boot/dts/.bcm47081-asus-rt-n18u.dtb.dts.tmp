@@ -1,0 +1,248 @@
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081-asus-rt-n18u.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081-asus-rt-n18u.dts"
+# 10 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081-asus-rt-n18u.dts"
+/dts-v1/;
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081.dtsi" 1
+# 10 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081.dtsi"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 1
+# 11 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h" 1
+# 12 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 2
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/input/input.h" 1
+# 13 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 2
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h" 1
+# 14 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 2
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h" 1
+# 15 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 2
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi" 1
+
+
+
+
+
+
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+ memory { device_type = "memory"; reg = <0 0>; };
+};
+# 16 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm5301x.dtsi" 2
+
+/ {
+ interrupt-parent = <&gic>;
+
+ chipcommonA {
+  compatible = "simple-bus";
+  ranges = <0x00000000 0x18000000 0x00001000>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+  uart0: serial@0300 {
+   compatible = "ns16550";
+   reg = <0x0300 0x100>;
+   interrupts = <0 85 4>;
+   clock-frequency = <100000000>;
+   status = "disabled";
+  };
+
+  uart1: serial@0400 {
+   compatible = "ns16550";
+   reg = <0x0400 0x100>;
+   interrupts = <0 85 4>;
+   clock-frequency = <100000000>;
+   status = "disabled";
+  };
+ };
+
+ mpcore {
+  compatible = "simple-bus";
+  ranges = <0x00000000 0x19020000 0x00003000>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+  scu@0000 {
+   compatible = "arm,cortex-a9-scu";
+   reg = <0x0000 0x100>;
+  };
+
+  timer@0200 {
+   compatible = "arm,cortex-a9-global-timer";
+   reg = <0x0200 0x100>;
+   interrupts = <1 11 4>;
+   clocks = <&clk_periph>;
+  };
+
+  local-timer@0600 {
+   compatible = "arm,cortex-a9-twd-timer";
+   reg = <0x0600 0x100>;
+   interrupts = <1 13 4>;
+   clocks = <&clk_periph>;
+  };
+
+  gic: interrupt-controller@1000 {
+   compatible = "arm,cortex-a9-gic";
+   #interrupt-cells = <3>;
+   #address-cells = <0>;
+   interrupt-controller;
+   reg = <0x1000 0x1000>,
+         <0x0100 0x100>;
+  };
+
+  L2: cache-controller@2000 {
+   compatible = "arm,pl310-cache";
+   reg = <0x2000 0x1000>;
+   cache-unified;
+   cache-level = <2>;
+  };
+ };
+
+ clocks {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+
+
+  clk_periph: periph {
+   compatible = "fixed-clock";
+   #clock-cells = <0>;
+   clock-frequency = <400000000>;
+  };
+ };
+
+ axi@18000000 {
+  compatible = "brcm,bus-axi";
+  reg = <0x18000000 0x1000>;
+  ranges = <0x00000000 0x18000000 0x00100000>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+
+  #interrupt-cells = <1>;
+  interrupt-map-mask = <0x000fffff 0xffff>;
+  interrupt-map =
+
+   <0x00000000 0 &gic 0 85 4>,
+
+
+   <0x00021000 0 &gic 0 79 4>,
+
+
+   <0x00023000 0 &gic 0 80 4>,
+
+
+   <0x00024000 0 &gic 0 147 4>,
+
+
+   <0x00025000 0 &gic 0 148 4>,
+
+
+   <0x00026000 0 &gic 0 149 4>,
+
+
+   <0x00027000 0 &gic 0 150 4>,
+
+
+   <0x00028000 0 &gic 0 64 4>,
+   <0x00028000 1 &gic 0 65 4>,
+   <0x00028000 2 &gic 0 66 4>,
+   <0x00028000 3 &gic 0 67 4>,
+   <0x00028000 4 &gic 0 68 4>,
+   <0x00028000 5 &gic 0 69 4>,
+   <0x00028000 6 &gic 0 70 4>,
+   <0x00028000 7 &gic 0 71 4>;
+
+  chipcommon: chipcommon@0 {
+   reg = <0x00000000 0x1000>;
+
+   gpio-controller;
+   #gpio-cells = <2>;
+  };
+ };
+};
+# 11 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081.dtsi" 2
+
+/ {
+ compatible = "brcm,bcm47081";
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  cpu@0 {
+   device_type = "cpu";
+   compatible = "arm,cortex-a9";
+   next-level-cache = <&L2>;
+   reg = <0x0>;
+  };
+ };
+};
+# 13 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/bcm47081-asus-rt-n18u.dts" 2
+
+/ {
+ compatible = "asus,rt-n18u", "brcm,bcm47081", "brcm,bcm4708";
+ model = "Asus RT-N18U (BCM47081)";
+
+ chosen {
+  bootargs = "console=ttyS0,115200";
+ };
+
+ memory {
+  reg = <0x00000000 0x08000000>;
+ };
+
+ leds {
+  compatible = "gpio-leds";
+
+  power {
+   label = "bcm53xx:blue:power";
+   gpios = <&chipcommon 0 1>;
+   linux,default-trigger = "default-on";
+  };
+
+  usb2 {
+   label = "bcm53xx:blue:usb2";
+   gpios = <&chipcommon 3 1>;
+   linux,default-trigger = "default-off";
+  };
+
+  wan {
+   label = "bcm53xx:blue:wan";
+   gpios = <&chipcommon 6 1>;
+   linux,default-trigger = "default-on";
+  };
+
+  lan {
+   label = "bcm53xx:blue:lan";
+   gpios = <&chipcommon 9 1>;
+   linux,default-trigger = "default-on";
+  };
+
+  usb3 {
+   label = "bcm53xx:blue:usb3";
+   gpios = <&chipcommon 14 1>;
+   linux,default-trigger = "default-off";
+  };
+ };
+
+ gpio-keys {
+  compatible = "gpio-keys";
+  #address-cells = <1>;
+  #size-cells = <0>;
+
+  restart {
+   label = "Reset";
+   linux,code = <0x198>;
+   gpios = <&chipcommon 7 1>;
+  };
+
+  wps {
+   label = "WPS";
+   linux,code = <0x211>;
+   gpios = <&chipcommon 11 1>;
+  };
+ };
+};

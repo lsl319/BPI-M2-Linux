@@ -1,0 +1,8 @@
+am3517_mt_ventoux.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/am3517_mt_ventoux.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap34xx.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/omap3.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi

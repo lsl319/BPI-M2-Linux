@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/tca6416-keypad.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/tca6416-keypad.ko drivers/input/keyboard/tca6416-keypad.o drivers/input/keyboard/tca6416-keypad.mod.o

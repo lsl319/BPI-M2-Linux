@@ -1,0 +1,1 @@
+cmd_drivers/cpufreq/highbank-cpufreq.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/cpufreq/highbank-cpufreq.ko drivers/cpufreq/highbank-cpufreq.o drivers/cpufreq/highbank-cpufreq.mod.o

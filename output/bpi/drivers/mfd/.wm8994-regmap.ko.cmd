@@ -1,0 +1,1 @@
+cmd_drivers/mfd/wm8994-regmap.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/mfd/wm8994-regmap.ko drivers/mfd/wm8994-regmap.o drivers/mfd/wm8994-regmap.mod.o

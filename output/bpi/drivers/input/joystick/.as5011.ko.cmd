@@ -1,0 +1,1 @@
+cmd_drivers/input/joystick/as5011.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/joystick/as5011.ko drivers/input/joystick/as5011.o drivers/input/joystick/as5011.mod.o

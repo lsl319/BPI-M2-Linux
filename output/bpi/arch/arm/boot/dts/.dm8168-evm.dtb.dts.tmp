@@ -1,0 +1,866 @@
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm8168-evm.dts"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm8168-evm.dts"
+
+
+
+
+
+/dts-v1/;
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi" 1
+
+
+
+
+
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h" 1
+# 8 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi" 2
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/pinctrl/omap.h" 1
+# 9 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi" 2
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi" 1
+
+
+
+
+
+
+/ {
+ #address-cells = <1>;
+ #size-cells = <1>;
+ chosen { };
+ aliases { };
+ memory { device_type = "memory"; reg = <0 0>; };
+};
+# 11 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi" 2
+
+/ {
+ compatible = "ti,dm816";
+ interrupt-parent = <&intc>;
+
+ aliases {
+  i2c0 = &i2c1;
+  i2c1 = &i2c2;
+  serial0 = &uart1;
+  serial1 = &uart2;
+  serial2 = &uart3;
+  ethernet0 = &eth0;
+  ethernet1 = &eth1;
+ };
+
+ cpus {
+  #address-cells = <1>;
+  #size-cells = <0>;
+  cpu@0 {
+   compatible = "arm,cortex-a8";
+   device_type = "cpu";
+   reg = <0>;
+  };
+ };
+
+ pmu {
+  compatible = "arm,cortex-a8-pmu";
+  interrupts = <3>;
+ };
+
+
+
+
+
+ soc {
+  compatible = "ti,omap-infra";
+  mpu {
+   compatible = "ti,omap3-mpu";
+   ti,hwmods = "mpu";
+  };
+ };
+# 60 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi"
+ ocp {
+  compatible = "ti,omap3-l3-smx", "simple-bus";
+  reg = <0x44000000 0x10000>;
+  interrupts = <9 10>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+  ranges;
+  ti,hwmods = "l3_main";
+
+  prcm: prcm@48180000 {
+   compatible = "ti,dm816-prcm";
+   reg = <0x48180000 0x4000>;
+
+   prcm_clocks: clocks {
+    #address-cells = <1>;
+    #size-cells = <0>;
+   };
+
+   prcm_clockdomains: clockdomains {
+   };
+  };
+
+  scrm: scrm@48140000 {
+   compatible = "ti,dm816-scrm", "simple-bus";
+   reg = <0x48140000 0x21000>;
+   #address-cells = <1>;
+   #size-cells = <1>;
+   ranges = <0 0x48140000 0x21000>;
+
+   dm816x_pinmux: pinmux@800 {
+    compatible = "pinctrl-single";
+    reg = <0x800 0x50a>;
+    #address-cells = <1>;
+    #size-cells = <0>;
+    pinctrl-single,register-width = <16>;
+    pinctrl-single,function-mask = <0xf>;
+   };
+
+
+   scm_conf: syscon@600 {
+    compatible = "syscon", "simple-bus";
+    reg = <0x600 0x110>;
+    #address-cells = <1>;
+    #size-cells = <1>;
+    ranges = <0 0x600 0x110>;
+
+    usb_phy0: usb-phy@20 {
+     compatible = "ti,dm8168-usb-phy";
+     reg = <0x20 0x8>;
+     reg-names = "phy";
+     clocks = <&main_fapll 6>;
+     clock-names = "refclk";
+     #phy-cells = <0>;
+     syscon = <&scm_conf>;
+    };
+
+    usb_phy1: usb-phy@28 {
+     compatible = "ti,dm8168-usb-phy";
+     reg = <0x28 0x8>;
+     reg-names = "phy";
+     clocks = <&main_fapll 6>;
+     clock-names = "refclk";
+     #phy-cells = <0>;
+     syscon = <&scm_conf>;
+    };
+   };
+
+   scrm_clocks: clocks {
+    #address-cells = <1>;
+    #size-cells = <0>;
+   };
+
+   scrm_clockdomains: clockdomains {
+   };
+  };
+
+  edma: edma@49000000 {
+   compatible = "ti,edma3";
+   ti,hwmods = "tpcc", "tptc0", "tptc1", "tptc2", "tptc3";
+   reg = <0x49000000 0x10000>,
+           <0x44e10f90 0x40>;
+   interrupts = <12 13 14>;
+   #dma-cells = <1>;
+  };
+
+  elm: elm@48080000 {
+   compatible = "ti,816-elm";
+   ti,hwmods = "elm";
+   reg = <0x48080000 0x2000>;
+   interrupts = <4>;
+  };
+
+  gpio1: gpio@48032000 {
+   compatible = "ti,omap4-gpio";
+   ti,hwmods = "gpio1";
+   ti,gpio-always-on;
+   reg = <0x48032000 0x1000>;
+   interrupts = <96>;
+   gpio-controller;
+   #gpio-cells = <2>;
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+
+  gpio2: gpio@4804c000 {
+   compatible = "ti,omap4-gpio";
+   ti,hwmods = "gpio2";
+   ti,gpio-always-on;
+   reg = <0x4804c000 0x1000>;
+   interrupts = <98>;
+   gpio-controller;
+   #gpio-cells = <2>;
+   interrupt-controller;
+   #interrupt-cells = <2>;
+  };
+
+  gpmc: gpmc@50000000 {
+   compatible = "ti,am3352-gpmc";
+   ti,hwmods = "gpmc";
+   reg = <0x50000000 0x2000>;
+   #address-cells = <2>;
+   #size-cells = <1>;
+   interrupts = <100>;
+   gpmc,num-cs = <6>;
+   gpmc,num-waitpins = <2>;
+  };
+
+  i2c1: i2c@48028000 {
+   compatible = "ti,omap4-i2c";
+   ti,hwmods = "i2c1";
+   reg = <0x48028000 0x1000>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   interrupts = <70>;
+   dmas = <&edma 58 &edma 59>;
+   dma-names = "tx", "rx";
+  };
+
+  i2c2: i2c@4802a000 {
+   compatible = "ti,omap4-i2c";
+   ti,hwmods = "i2c2";
+   reg = <0x4802a000 0x1000>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   interrupts = <71>;
+   dmas = <&edma 60 &edma 61>;
+   dma-names = "tx", "rx";
+  };
+
+  intc: interrupt-controller@48200000 {
+   compatible = "ti,dm816-intc";
+   interrupt-controller;
+   #interrupt-cells = <1>;
+   reg = <0x48200000 0x1000>;
+  };
+
+  mailbox: mailbox@480c8000 {
+   compatible = "ti,omap4-mailbox";
+   reg = <0x480c8000 0x2000>;
+   interrupts = <77>;
+   ti,hwmods = "mailbox";
+   ti,mbox-num-users = <4>;
+   ti,mbox-num-fifos = <12>;
+   mbox_dsp: mbox_dsp {
+    ti,mbox-tx = <3 0 0>;
+    ti,mbox-rx = <0 0 0>;
+   };
+  };
+
+  mdio: mdio@4a100800 {
+   compatible = "ti,davinci_mdio";
+   #address-cells = <1>;
+   #size-cells = <0>;
+   reg = <0x4a100800 0x100>;
+   ti,hwmods = "davinci_mdio";
+   bus_freq = <1000000>;
+   phy0: ethernet-phy@0 {
+    reg = <1>;
+   };
+   phy1: ethernet-phy@1 {
+    reg = <2>;
+   };
+  };
+
+  eth0: ethernet@4a100000 {
+   compatible = "ti,dm816-emac";
+   ti,hwmods = "emac0";
+   reg = <0x4a100000 0x800
+          0x4a100900 0x3700>;
+   clocks = <&sysclk24_ck>;
+   syscon = <&scm_conf>;
+   ti,davinci-ctrl-reg-offset = <0>;
+   ti,davinci-ctrl-mod-reg-offset = <0x900>;
+   ti,davinci-ctrl-ram-offset = <0x2000>;
+   ti,davinci-ctrl-ram-size = <0x2000>;
+   interrupts = <40 41 42 43>;
+   phy-handle = <&phy0>;
+  };
+
+  eth1: ethernet@4a120000 {
+   compatible = "ti,dm816-emac";
+   ti,hwmods = "emac1";
+   reg = <0x4a120000 0x4000>;
+   clocks = <&sysclk24_ck>;
+   syscon = <&scm_conf>;
+   ti,davinci-ctrl-reg-offset = <0>;
+   ti,davinci-ctrl-mod-reg-offset = <0x900>;
+   ti,davinci-ctrl-ram-offset = <0x2000>;
+   ti,davinci-ctrl-ram-size = <0x2000>;
+   interrupts = <44 45 46 47>;
+   phy-handle = <&phy1>;
+  };
+
+  mcspi1: spi@48030000 {
+   compatible = "ti,omap4-mcspi";
+   reg = <0x48030000 0x1000>;
+   #address-cells = <1>;
+   #size-cells = <0>;
+   interrupts = <65>;
+   ti,spi-num-cs = <4>;
+   ti,hwmods = "mcspi1";
+   dmas = <&edma 16 &edma 17
+    &edma 18 &edma 19>;
+   dma-names = "tx0", "rx0", "tx1", "rx1";
+  };
+
+  mmc1: mmc@48060000 {
+   compatible = "ti,omap4-hsmmc";
+   reg = <0x48060000 0x11000>;
+   ti,hwmods = "mmc1";
+   interrupts = <64>;
+   dmas = <&edma 24 &edma 25>;
+   dma-names = "tx", "rx";
+  };
+
+  timer1: timer@4802e000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x4802e000 0x2000>;
+   interrupts = <67>;
+   ti,hwmods = "timer1";
+   ti,timer-alwon;
+  };
+
+  timer2: timer@48040000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x48040000 0x2000>;
+   interrupts = <68>;
+   ti,hwmods = "timer2";
+  };
+
+  timer3: timer@48042000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x48042000 0x2000>;
+   interrupts = <69>;
+   ti,hwmods = "timer3";
+  };
+
+  timer4: timer@48044000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x48044000 0x2000>;
+   interrupts = <92>;
+   ti,hwmods = "timer4";
+  };
+
+  timer5: timer@48046000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x48046000 0x2000>;
+   interrupts = <93>;
+   ti,hwmods = "timer5";
+  };
+
+  timer6: timer@48048000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x48048000 0x2000>;
+   interrupts = <94>;
+   ti,hwmods = "timer6";
+  };
+
+  timer7: timer@4804a000 {
+   compatible = "ti,dm816-timer";
+   reg = <0x4804a000 0x2000>;
+   interrupts = <95>;
+   ti,hwmods = "timer7";
+  };
+
+  uart1: uart@48020000 {
+   compatible = "ti,omap3-uart";
+   ti,hwmods = "uart1";
+   reg = <0x48020000 0x2000>;
+   clock-frequency = <48000000>;
+   interrupts = <72>;
+   dmas = <&edma 26 &edma 27>;
+   dma-names = "tx", "rx";
+  };
+
+  uart2: uart@48022000 {
+   compatible = "ti,omap3-uart";
+   ti,hwmods = "uart2";
+   reg = <0x48022000 0x2000>;
+   clock-frequency = <48000000>;
+   interrupts = <73>;
+   dmas = <&edma 28 &edma 29>;
+   dma-names = "tx", "rx";
+  };
+
+  uart3: uart@48024000 {
+   compatible = "ti,omap3-uart";
+   ti,hwmods = "uart3";
+   reg = <0x48024000 0x2000>;
+   clock-frequency = <48000000>;
+   interrupts = <74>;
+   dmas = <&edma 30 &edma 31>;
+   dma-names = "tx", "rx";
+  };
+
+
+  usb: usb_otg_hs@47401000 {
+   compatible = "ti,am33xx-usb";
+   reg = <0x47401000 0x400000>;
+   ranges;
+   #address-cells = <1>;
+   #size-cells = <1>;
+   ti,hwmods = "usb_otg_hs";
+
+   usb0: usb@47401000 {
+    compatible = "ti,musb-am33xx";
+    reg = <0x47401400 0x400
+           0x47401000 0x200>;
+    reg-names = "mc", "control";
+    interrupts = <18>;
+    interrupt-names = "mc";
+    dr_mode = "host";
+    interface-type = <0>;
+    phys = <&usb_phy0>;
+    phy-names = "usb2-phy";
+    mentor,multipoint = <1>;
+    mentor,num-eps = <16>;
+    mentor,ram-bits = <12>;
+    mentor,power = <500>;
+   };
+
+   usb1: usb@47401800 {
+    compatible = "ti,musb-am33xx";
+    reg = <0x47401c00 0x400
+           0x47401800 0x200>;
+    reg-names = "mc", "control";
+    interrupts = <19>;
+    interrupt-names = "mc";
+    dr_mode = "host";
+    interface-type = <0>;
+    phys = <&usb_phy1>;
+    phy-names = "usb2-phy";
+    mentor,multipoint = <1>;
+    mentor,num-eps = <16>;
+    mentor,ram-bits = <12>;
+    mentor,power = <500>;
+   };
+  };
+
+  wd_timer2: wd_timer@480c2000 {
+   compatible = "ti,omap3-wdt";
+   ti,hwmods = "wd_timer";
+   reg = <0x480c2000 0x1000>;
+   interrupts = <0>;
+  };
+ };
+};
+
+# 1 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x-clocks.dtsi" 1
+
+
+
+
+
+
+&scrm {
+ main_fapll: main_fapll {
+  #clock-cells = <1>;
+  compatible = "ti,dm816-fapll-clock";
+  reg = <0x400 0x40>;
+  clocks = <&sys_clkin_ck &sys_clkin_ck>;
+  clock-indices = <1>, <2>, <3>, <4>, <5>,
+    <6>, <7>;
+  clock-output-names = "main_pll_clk1",
+         "main_pll_clk2",
+         "main_pll_clk3",
+         "main_pll_clk4",
+         "main_pll_clk5",
+         "main_pll_clk6",
+         "main_pll_clk7";
+ };
+
+ ddr_fapll: ddr_fapll {
+  #clock-cells = <1>;
+  compatible = "ti,dm816-fapll-clock";
+  reg = <0x440 0x30>;
+  clocks = <&sys_clkin_ck &sys_clkin_ck>;
+  clock-indices = <1>, <2>, <3>, <4>;
+  clock-output-names = "ddr_pll_clk1",
+         "ddr_pll_clk2",
+         "ddr_pll_clk3",
+         "ddr_pll_clk4";
+ };
+
+ video_fapll: video_fapll {
+  #clock-cells = <1>;
+  compatible = "ti,dm816-fapll-clock";
+  reg = <0x470 0x30>;
+  clocks = <&sys_clkin_ck &sys_clkin_ck>;
+  clock-indices = <1>, <2>, <3>;
+  clock-output-names = "video_pll_clk1",
+         "video_pll_clk2",
+         "video_pll_clk3";
+ };
+
+ audio_fapll: audio_fapll {
+  #clock-cells = <1>;
+  compatible = "ti,dm816-fapll-clock";
+  reg = <0x4a0 0x30>;
+  clocks = <&main_fapll 7>, < &sys_clkin_ck>;
+  clock-indices = <1>, <2>, <3>, <4>, <5>;
+  clock-output-names = "audio_pll_clk1",
+         "audio_pll_clk2",
+         "audio_pll_clk3",
+         "audio_pll_clk4",
+         "audio_pll_clk5";
+ };
+};
+
+&scrm_clocks {
+ secure_32k_ck: secure_32k_ck {
+  #clock-cells = <0>;
+  compatible = "fixed-clock";
+  clock-frequency = <32768>;
+ };
+
+ sys_32k_ck: sys_32k_ck {
+  #clock-cells = <0>;
+  compatible = "fixed-clock";
+  clock-frequency = <32768>;
+ };
+
+ tclkin_ck: tclkin_ck {
+  #clock-cells = <0>;
+  compatible = "fixed-clock";
+  clock-frequency = <32768>;
+ };
+
+ sys_clkin_ck: sys_clkin_ck {
+  #clock-cells = <0>;
+  compatible = "fixed-clock";
+  clock-frequency = <27000000>;
+ };
+};
+
+
+&prcm_clocks {
+ clkout_pre_ck: clkout_pre_ck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&main_fapll 5 &ddr_fapll 1 &video_fapll 1
+     &audio_fapll 1>;
+  reg = <0x100>;
+ };
+
+ clkout_div_ck: clkout_div_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&clkout_pre_ck>;
+  ti,bit-shift = <3>;
+  ti,max-div = <8>;
+  reg = <0x100>;
+ };
+
+ clkout_ck: clkout_ck {
+  #clock-cells = <0>;
+  compatible = "ti,gate-clock";
+  clocks = <&clkout_div_ck>;
+  ti,bit-shift = <7>;
+  reg = <0x100>;
+ };
+
+
+ sysclk1_ck: sysclk1_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 1>;
+  ti,max-div = <7>;
+  reg = <0x0300>;
+ };
+
+ sysclk2_ck: sysclk2_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 2>;
+  ti,max-div = <7>;
+  reg = <0x0304>;
+ };
+
+ sysclk3_ck: sysclk3_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 3>;
+  ti,max-div = <7>;
+  reg = <0x0308>;
+ };
+
+ sysclk4_ck: sysclk4_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 4>;
+  ti,max-div = <1>;
+  reg = <0x030c>;
+ };
+
+ sysclk5_ck: sysclk5_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&sysclk4_ck>;
+  ti,max-div = <1>;
+  reg = <0x0310>;
+ };
+
+ sysclk6_ck: sysclk6_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 4>;
+  ti,dividers = <2>, <4>;
+  reg = <0x0314>;
+ };
+
+ sysclk10_ck: sysclk10_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&ddr_fapll 2>;
+  ti,max-div = <7>;
+  reg = <0x0324>;
+ };
+
+ sysclk24_ck: sysclk24_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&main_fapll 5>;
+  ti,max-div = <7>;
+  reg = <0x03b4>;
+ };
+
+ mpu_ck: mpu_ck {
+  #clock-cells = <0>;
+  compatible = "ti,gate-clock";
+  clocks = <&sysclk2_ck>;
+  ti,bit-shift = <1>;
+                reg = <0x15dc>;
+ };
+
+ audio_pll_a_ck: audio_pll_a_ck {
+  #clock-cells = <0>;
+  compatible = "ti,divider-clock";
+  clocks = <&audio_fapll 1>;
+  ti,max-div = <7>;
+  reg = <0x035c>;
+ };
+
+ sysclk18_ck: sysclk18_ck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&sys_32k_ck>, <&audio_pll_a_ck>;
+  reg = <0x0378>;
+ };
+
+ timer1_fck: timer1_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x0390>;
+ };
+
+ timer2_fck: timer2_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x0394>;
+ };
+
+ timer3_fck: timer3_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x0398>;
+ };
+
+ timer4_fck: timer4_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x039c>;
+ };
+
+ timer5_fck: timer5_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x03a0>;
+ };
+
+ timer6_fck: timer6_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x03a4>;
+ };
+
+ timer7_fck: timer7_fck {
+  #clock-cells = <0>;
+  compatible = "ti,mux-clock";
+  clocks = <&tclkin_ck>, <&sysclk18_ck>, <&sys_clkin_ck>;
+  reg = <0x03a8>;
+ };
+};
+# 428 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm816x.dtsi" 2
+# 9 "/home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/dm8168-evm.dts" 2
+
+/ {
+ model = "DM8168 EVM";
+ compatible = "ti,dm8168-evm", "ti,dm8168";
+
+ memory {
+  device_type = "memory";
+  reg = <0x80000000 0x40000000
+         0xc0000000 0x40000000>;
+ };
+
+
+ vmmcsd_fixed: fixedregulator@0 {
+  compatible = "regulator-fixed";
+  regulator-name = "vmmcsd_fixed";
+  regulator-min-microvolt = <3300000>;
+  regulator-max-microvolt = <3300000>;
+ };
+};
+
+&dm816x_pinmux {
+ mcspi1_pins: pinmux_mcspi1_pins {
+  pinctrl-single,pins = <
+   ((((0x0a94)) & 0xffff) - (0x0800)) ((1 << 8) | 0)
+   ((((0x0a98)) & 0xffff) - (0x0800)) (0 | 0)
+   ((((0x0aa8)) & 0xffff) - (0x0800)) ((1 << 8) | 0)
+   ((((0x0aac)) & 0xffff) - (0x0800)) ((1 << 8) | 0)
+  >;
+ };
+
+ mmc_pins: pinmux_mmc_pins {
+  pinctrl-single,pins = <
+   ((((0x0a70)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a74)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a78)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a7C)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a80)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a84)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a88)) & 0xffff) - (0x0800)) (0)
+   ((((0x0a8c)) & 0xffff) - (0x0800)) (2)
+   ((((0x0a90)) & 0xffff) - (0x0800)) (2)
+  >;
+ };
+
+ usb0_pins: pinmux_usb0_pins {
+  pinctrl-single,pins = <
+   ((((0x0d00)) & 0xffff) - (0x0800)) (0)
+  >;
+ };
+
+ usb1_pins: pinmux_usb0_pins {
+  pinctrl-single,pins = <
+   ((((0x0d04)) & 0xffff) - (0x0800)) (0)
+  >;
+ };
+};
+
+&i2c1 {
+ extgpio0: pcf8575@20 {
+  compatible = "nxp,pcf8575";
+  reg = <0x20>;
+  gpio-controller;
+  #gpio-cells = <2>;
+ };
+};
+
+&i2c2 {
+ extgpio1: pcf8575@20 {
+  compatible = "nxp,pcf8575";
+  reg = <0x20>;
+  gpio-controller;
+  #gpio-cells = <2>;
+ };
+};
+
+&gpmc {
+ ranges = <0 0 0x04000000 0x01000000>;
+
+ nand@0,0 {
+  linux,mtd-name= "micron,mt29f2g16aadwp";
+  reg = <0 0 4>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+  ti,nand-ecc-opt = "bch8";
+  nand-bus-width = <16>;
+  gpmc,device-width = <2>;
+  gpmc,sync-clk-ps = <0>;
+  gpmc,cs-on-ns = <0>;
+  gpmc,cs-rd-off-ns = <44>;
+  gpmc,cs-wr-off-ns = <44>;
+  gpmc,adv-on-ns = <6>;
+  gpmc,adv-rd-off-ns = <34>;
+  gpmc,adv-wr-off-ns = <44>;
+  gpmc,we-on-ns = <0>;
+  gpmc,we-off-ns = <40>;
+  gpmc,oe-on-ns = <0>;
+  gpmc,oe-off-ns = <54>;
+  gpmc,access-ns = <64>;
+  gpmc,rd-cycle-ns = <82>;
+  gpmc,wr-cycle-ns = <82>;
+  gpmc,wait-on-read = "true";
+  gpmc,wait-on-write = "true";
+  gpmc,bus-turnaround-ns = <0>;
+  gpmc,cycle2cycle-delay-ns = <0>;
+  gpmc,clk-activation-ns = <0>;
+  gpmc,wait-monitoring-ns = <0>;
+  gpmc,wr-access-ns = <40>;
+  gpmc,wr-data-mux-bus-ns = <0>;
+  partition@0 {
+   label = "X-Loader";
+   reg = <0 0x80000>;
+  };
+  partition@0x80000 {
+   label = "U-Boot";
+   reg = <0x80000 0x1c0000>;
+  };
+  partition@0x1c0000 {
+   label = "Environment";
+   reg = <0x240000 0x40000>;
+  };
+  partition@0x280000 {
+   label = "Kernel";
+   reg = <0x280000 0x500000>;
+  };
+  partition@0x780000 {
+   label = "Filesystem";
+   reg = <0x780000 0xf880000>;
+  };
+ };
+};
+
+&mcspi1 {
+ pinctrl-names = "default";
+ pinctrl-0 = <&mcspi1_pins>;
+
+ m25p80@0 {
+  compatible = "w25x32";
+  spi-max-frequency = <48000000>;
+  reg = <0>;
+  #address-cells = <1>;
+  #size-cells = <1>;
+ };
+};
+
+&mmc1 {
+ pinctrl-names = "default";
+ pinctrl-0 = <&mmc_pins>;
+ vmmc-supply = <&vmmcsd_fixed>;
+ bus-width = <4>;
+ cd-gpios = <&gpio2 7 1>;
+ wp-gpios = <&gpio2 8 1>;
+};
+
+
+&usb0 {
+ pinctrl-names = "default";
+ pinctrl-0 = <&usb0_pins>;
+ mentor,multipoint = <0>;
+};
+
+&usb1 {
+ pinctrl-names = "default";
+ pinctrl-0 = <&usb1_pins>;
+ mentor,multipoint = <0>;
+};

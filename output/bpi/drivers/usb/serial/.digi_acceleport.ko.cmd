@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/digi_acceleport.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/usb/serial/digi_acceleport.ko drivers/usb/serial/digi_acceleport.o drivers/usb/serial/digi_acceleport.mod.o

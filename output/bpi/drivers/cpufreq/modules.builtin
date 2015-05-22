@@ -1,0 +1,6 @@
+kernel/drivers/cpufreq/cpufreq_stats.ko
+kernel/drivers/cpufreq/cpufreq_performance.ko
+kernel/drivers/cpufreq/cpufreq_ondemand.ko
+kernel/drivers/cpufreq/cpufreq-dt.ko
+kernel/drivers/cpufreq/arm-exynos-cpufreq.ko
+kernel/drivers/cpufreq/exynos5440-cpufreq.ko

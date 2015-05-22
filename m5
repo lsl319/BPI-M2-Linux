@@ -1,0 +1,1 @@
+LOADADDR=0x40008000 make -j8 INSTALL_MOD_PATH=out modules_install

@@ -1,0 +1,2 @@
+wm8650-mid.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/wm8650-mid.dts

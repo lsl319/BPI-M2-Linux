@@ -1,0 +1,1 @@
+cmd_drivers/clk/hisilicon/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/clk/hisilicon/built-in.o drivers/clk/hisilicon/clk.o drivers/clk/hisilicon/clkgate-separated.o drivers/clk/hisilicon/clk-hi3620.o drivers/clk/hisilicon/clk-hip04.o drivers/clk/hisilicon/clk-hix5hd2.o 

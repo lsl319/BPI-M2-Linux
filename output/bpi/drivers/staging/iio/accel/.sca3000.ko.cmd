@@ -1,0 +1,1 @@
+cmd_drivers/staging/iio/accel/sca3000.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/iio/accel/sca3000.ko drivers/staging/iio/accel/sca3000.o drivers/staging/iio/accel/sca3000.mod.o

@@ -1,0 +1,1 @@
+cmd_drivers/video/fbdev/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/video/fbdev/built-in.o drivers/video/fbdev/core/built-in.o drivers/video/fbdev/amba-clcd.o drivers/video/fbdev/amba-clcd-versatile.o drivers/video/fbdev/wm8505fb.o drivers/video/fbdev/omap2/built-in.o drivers/video/fbdev/xen-fbfront.o drivers/video/fbdev/mx3fb.o drivers/video/fbdev/simplefb.o 

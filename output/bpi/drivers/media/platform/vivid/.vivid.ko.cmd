@@ -1,0 +1,1 @@
+cmd_drivers/media/platform/vivid/vivid.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/media/platform/vivid/vivid.ko drivers/media/platform/vivid/vivid.o drivers/media/platform/vivid/vivid.mod.o

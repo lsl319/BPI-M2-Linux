@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/samsung/built-in.o :=  arm-linux-gnueabihf-ld -EL    -r -o drivers/pinctrl/samsung/built-in.o drivers/pinctrl/samsung/pinctrl-samsung.o drivers/pinctrl/samsung/pinctrl-exynos.o drivers/pinctrl/samsung/pinctrl-exynos5440.o 

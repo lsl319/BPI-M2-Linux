@@ -1,0 +1,1 @@
+cmd_drivers/rtc/rtc-cmos.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/rtc/rtc-cmos.ko drivers/rtc/rtc-cmos.o drivers/rtc/rtc-cmos.mod.o

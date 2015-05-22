@@ -1,0 +1,1 @@
+cmd_drivers/input/keyboard/lm8333.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/keyboard/lm8333.ko drivers/input/keyboard/lm8333.o drivers/input/keyboard/lm8333.mod.o

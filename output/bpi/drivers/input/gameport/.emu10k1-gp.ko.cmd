@@ -1,0 +1,1 @@
+cmd_drivers/input/gameport/emu10k1-gp.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/input/gameport/emu10k1-gp.ko drivers/input/gameport/emu10k1-gp.o drivers/input/gameport/emu10k1-gp.mod.o

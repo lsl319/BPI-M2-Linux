@@ -1,0 +1,1 @@
+cmd_drivers/power/twl4030_charger.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/power/twl4030_charger.ko drivers/power/twl4030_charger.o drivers/power/twl4030_charger.mod.o

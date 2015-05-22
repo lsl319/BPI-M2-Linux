@@ -1,0 +1,10 @@
+imx51-digi-connectcore-jsk.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx51-digi-connectcore-jsk.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx51-digi-connectcore-som.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx51.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/skeleton.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/imx51-pinfunc.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/imx5-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/input/input.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h

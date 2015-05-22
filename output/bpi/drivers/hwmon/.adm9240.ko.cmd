@@ -1,0 +1,1 @@
+cmd_drivers/hwmon/adm9240.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/hwmon/adm9240.ko drivers/hwmon/adm9240.o drivers/hwmon/adm9240.mod.o

@@ -1,0 +1,5 @@
+r7s72100-genmai.o: \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/r7s72100-genmai.dts \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/r7s72100.dtsi \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/clock/r7s72100-clock.h \
+ /home/pi/kernel/linux-4.0.2/arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h

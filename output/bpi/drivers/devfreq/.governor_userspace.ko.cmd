@@ -1,0 +1,1 @@
+cmd_drivers/devfreq/governor_userspace.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/devfreq/governor_userspace.ko drivers/devfreq/governor_userspace.o drivers/devfreq/governor_userspace.mod.o

@@ -1,0 +1,1 @@
+cmd_sound/soc/sh/rcar/snd-soc-rcar.o := arm-linux-gnueabihf-ld -EL    -r -o sound/soc/sh/rcar/snd-soc-rcar.o sound/soc/sh/rcar/core.o sound/soc/sh/rcar/gen.o sound/soc/sh/rcar/src.o sound/soc/sh/rcar/adg.o sound/soc/sh/rcar/ssi.o sound/soc/sh/rcar/dvc.o 

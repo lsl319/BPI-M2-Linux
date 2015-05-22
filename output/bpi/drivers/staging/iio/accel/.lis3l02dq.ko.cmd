@@ -1,0 +1,1 @@
+cmd_drivers/staging/iio/accel/lis3l02dq.ko := arm-linux-gnueabihf-ld -EL -r  -T /home/pi/kernel/linux-4.0.2/scripts/module-common.lds --build-id  -o drivers/staging/iio/accel/lis3l02dq.ko drivers/staging/iio/accel/lis3l02dq.o drivers/staging/iio/accel/lis3l02dq.mod.o
